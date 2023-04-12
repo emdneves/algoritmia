@@ -4,12 +4,6 @@ import java.util.Scanner;
 public class PL_06_01 
 {
 
-
-    /**
-     *
-     * @param num
-     * @return
-     */
     public static boolean par(int num)
     {
 
@@ -42,7 +36,7 @@ public class PL_06_01
         input.close();  
 
         // Invocar a função "par"
-        if(par(num))
+        if(par(num)==true)
         {
             System.out.println("É par");
         }
