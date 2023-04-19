@@ -6,22 +6,19 @@ import java.util.Scanner;
 class Main
 
 {
-    public static void main(String[] args) 
-    {
+    public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
         int size = 3;
 
         int[][] matriz = new int[size][size];
 
-        int col = 0, row = 0;      
+        int col = 0, row = 0;
 
         // Read the matrix values
-        for (row = 0; row < size; row++)
-        {
-            for (col = 0; col < size; col++)
-            {
-                System.out.println("Insira matriz "+ row + " " + col +": ");
+        for (row = 0; row < size; row++) {
+            for (col = 0; col < size; col++) {
+                System.out.println("Insira matriz " + row + " " + col + ": ");
                 matriz[row][col] = input.nextInt();
             }
         }
@@ -32,19 +29,18 @@ class Main
 
         // Display the elements of the matrix
         System.out.println("matrix:");
-        for (row = 0; row < size; row++) 
-        {   
-            for (col = 0; col < size; col++) 
-            {
-                System.out.print(matriz[row][col] +" ");
-                if (matriz[row][col] == repeat)
-                {
-                count++;
+        for (row = 0; row < size; row++) {
+            for (col = 0; col < size; col++) {
+                System.out.print(matriz[row][col] + " ");
+                if (matriz[row][col] == repeat) {
+                    count++;
                 }
             }
             System.out.println();
         }
         System.out.println("o número " + repeat + " é repetido " + count + " vezes");
+        // closing the scanner
+        input.close();
     }
 
 }

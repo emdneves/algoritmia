@@ -1,23 +1,34 @@
 import java.util.Scanner;
 // 6. Escreva uma função que recebe um array de inteiros como parâmetro e retorna o maior valor do array.
 
-public class Ex_06
-{
+import java.util.Scanner;
 
-    public static void main (String[] args) 
-    {
+class Main {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
 
-    import java.util.Scanner;
-    
+        System.out.println("Enter the array range");
+        int size = input.nextInt();
+        int[] list = new int[size];
 
-    System.out.println("Enter the array range");  
-    int size = input.nextInt();
+        System.out.println("Enter the elements of the array:");
+        for (int i = 0; i < size; i++) {
+            list[i] = input.nextInt();
+        }
 
-    int list[size];
+        int max = getMax(list);
+        System.out.println("The maximum value in the array is: " + max);
+        // closing the scanner
+        input.close();
+    }
 
-    System.out.println("Enter the elements of the array ::");  
-    for(int i=0; i < size; i++) 
-    {  
-       list[i] = input.nextInt();  
+    public static int getMax(int[] arr) {
+        int max = arr[0];
+        for (int i = 1; i < arr.length; i++) {
+            if (arr[i] > max) {
+                max = arr[i];
+            }
+        }
+        return max;
     }
 }

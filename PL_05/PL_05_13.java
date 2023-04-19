@@ -47,6 +47,9 @@ class Main
                 }
             }
             System.out.println();
+
+            // closing the scanner
+            input.close();
         }
     }
 }

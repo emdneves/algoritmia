@@ -27,16 +27,18 @@ class Main {
         
     }
 
-        }
+        
     // check if the count is equal to the size of the sequence
     if(count==size)
 
     {
         System.out.println("The sequence is in increasing order.");
-    }else
+    }
+    else
     {
         System.out.println("The sequence is not in increasing order.");
     }
     // close the scanner object
     scanner.close();
-}}
+}
+}

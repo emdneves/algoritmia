@@ -21,25 +21,22 @@ class Main
 
         // Read the matrix values
         System.out.println("Enter the elements of the matrix");
-        for (int row = 0; row < x; row++)
-        {
-            for (int col = 0; col < y; col++)
-            {
-                System.out.println("Insira matriz "+ row + " " + col +": ");
+        for (int row = 0; row < x; row++) {
+            for (int col = 0; col < y; col++) {
+                System.out.println("Insira matriz " + row + " " + col + ": ");
                 matriz[row][col] = input.nextInt();
             }
         }
 
-
         // Display the elements of the matrix
         System.out.println("matrix:");
-        for (int row = 0; row < x; row++) 
-        {
-            for (int col = 0; col < y; col++) 
-            {
-                System.out.print(matriz[row][col] +" ");
+        for (int row = 0; row < x; row++) {
+            for (int col = 0; col < y; col++) {
+                System.out.print(matriz[row][col] + " ");
             }
             System.out.println();
+            // closing the scanner
+            input.close();
         }
     }
 
