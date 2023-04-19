@@ -1,13 +1,7 @@
-/* 9. Implemente um programa que contenha:
-a. Uma função que pergunte o tamanho de um array a ser preenchido e o permita preencher.
-b. Uma função com menu de opções que permitam invocar as funções desenvolvidas nos exercícios 6 a 8. */
-
-import java.util.List;
 import java.util.Scanner;
 
-class Main {
+public class Main {
 
-//-----------------------------------------------------funções-----------------------------------------------------------//
     // função "crescente"
     public static boolean getInc(int[] arr) {
         int inc = arr[0];
@@ -46,63 +40,60 @@ class Main {
         }
         return min;
     }
-//-----------------------------------------------------funções-----------------------------------------------------------//
-//-----------------------------------------------------menu-----------------------------------------------------------//
 
-public static int menuOP(list[], int op) {
-                    // menu de opções
+    // função menu de opções que permitam invocar as funções desenvolvidas nos exercícios 6 a 8
+    public static void menuOP(int[] list) {
+        Scanner input = new Scanner(System.in);
+        int op;
+        do {
+            // mostrando opções
+            System.out.print("Escolha uma opção:\n 1. Maior\n 2. Menor\n 3. Crescente\n 4. Sair\n");
+            op = input.nextInt();
+
             switch (op) {
                 case 1:
-                    // Invocar a função "maior"
-                    return(getMax(list));
+                    // invocando a função "maior"
+                    System.out.println("O maior elemento é: " + getMax(list));
                     break;
 
                 case 2:
-                    // Invocar a função "menor"
-                    return(getMin(list));
+                    // invocando a função "menor"
+                    System.out.println("O menor elemento é: " + getMin(list));
                     break;
 
                 case 3:
-                    // Invocar a função "crescente"
-                    return (getInc(list));
+                    // invocando a função "crescente"
+                    if (getInc(list)) {
+                        System.out.println("O array está em ordem crescente.");
+                    } else {
+                        System.out.println("O array não está em ordem crescente.");
+                    }
+                    break;
+
+                case 4:
+                    // encerrando o programa
+                    System.out.println("Encerrando o programa...");
                     break;
 
                 default:
-
+                    System.out.println("Opção inválida!");
+                    break;
             }
+        } while (op != 4);
+    }
+
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+        System.out.println("Digite o tamanho do array:");
+        int size = input.nextInt();
+        int[] list = new int[size];
+
+        System.out.println("Digite os elementos do array:");
+        for (int i = 0; i < size; i++) {
+            list[i] = input.nextInt();
         }
 
-
-//-----------------------------------------------------menu-----------------------------------------------------------//
-
-        public static void main(String[] args) {
-            Scanner input = new Scanner(System.in);
-    
-            System.out.println("Enter the array range");
-            int size = input.nextInt();
-            int[] list = new int[size];
-    
-            System.out.println("Enter the elements of the array:");
-            for (int i = 0; i < size; i++) {
-                list[i] = input.nextInt();
-            }
-
-            do {
-                // getting option
-                System.out.print("insert option:\n 1. maior\n 2. menor\n 3. crescente");
-                int op = input.nextInt();
-
-            } while ((op == 1) || (op == 2) || op == 3));
-
-
-            System.out.println(menuOP(list, op));
-
-        }
-        
-
-
-
-
-
-}
+        menuOP(list);
+    }
 }
