@@ -41,7 +41,8 @@ public class Main {
         return min;
     }
 
-    // função menu de opções que permitam invocar as funções desenvolvidas nos exercícios 6 a 8
+    // função menu de opções que permitam invocar as funções desenvolvidas nos
+    // exercícios 6 a 8
     public static void menuOP(int[] list) {
         Scanner input = new Scanner(System.in);
         int op;
@@ -93,6 +94,8 @@ public class Main {
         for (int i = 0; i < size; i++) {
             list[i] = input.nextInt();
         }
+// closing the scanner
+input.close();
 
         menuOP(list);
     }
