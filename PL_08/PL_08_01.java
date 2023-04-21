@@ -7,7 +7,7 @@
  
  public class Main {
      public static void main(String[] args) {
-         String fileName = "arquivo.txt"; // nome do arquivo
+         String fileName = "exercicio_01_Alternativa01.txt"; // nome do arquivo
          try {
              File file = new File(fileName); // cria um objeto File com o nome do arquivo
              Scanner scanner = new Scanner(file); // cria um objeto Scanner para ler o arquivo
