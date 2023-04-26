@@ -40,17 +40,13 @@ ser uma função própria (objeto de valorização)).
 5. Dada uma Editora, imprima todos géneros e os respetivos jogos.
 6. Imprima qual o jogo mais caro e os clientes que o compraram. */
 
-
-
-pseudocode
+/* pseudocode
 
 use a loop to check how many lines the ile contains
 
 read the values of the file and store them in an array or matrix
 
-
-
-
+ */
 
 import java.io.File;
 import java.io.IOException;
@@ -67,6 +63,7 @@ public class FA_04 {
         try {
             Scanner scanner = new Scanner(new File("GameStart.csv"));
             int numLinhas = 0;
+            scanner.nextLine();
             while (scanner.hasNextLine()) {
                 scanner.nextLine();
                 numLinhas++;
@@ -104,9 +101,9 @@ public class FA_04 {
             System.out.println("5. Imprimir todos géneros e os respetivos jogos de uma Editora");
             System.out.println("6. Imprimir o jogo mais caro e os clientes que o compraram");
             System.out.println("7. Sair");
-        
+
             opcao = scanner.nextInt();
-        
+
             switch (opcao) {
                 case 1:
                     imprimirDados(dados);
@@ -134,43 +131,55 @@ public class FA_04 {
             }
         }
     }
-        
 
-    // função 1
     public static void imprimirDados(String[][] dados) {
+        // Calculate the maximum width for each column
+        int[] maxColWidths = new int[dados[0].length];
+        for (int coluna = 0; coluna < dados[0].length; coluna++) {
+            int max = 0;
+            for (int linha = 0; linha < dados.length; linha++) {
+                int len = dados[linha][coluna].length();
+                if (len > max) {
+                    max = len;
+                }
+            }
+            maxColWidths[coluna] = max;
+        }
+        // Print the data with aligned columns
         for (int linha = 0; linha < dados.length; linha++) {
             for (int coluna = 0; coluna < dados[linha].length; coluna++) {
-                System.out.print(dados[linha][coluna] + " ");
+                // Use printf to specify a fixed width for each field
+                System.out.printf("%-" + maxColWidths[coluna] + "s ", dados[linha][coluna]);
             }
             System.out.println();
         }
     }
 
-    // função 2
     public static void vendasEValorTotal(String[][] dados) {
-        int numVendas = dados.length - 1; 
+        int numVendas = dados.length;
         double valorTotal = 0;
-
-        for (int i = 1; i < dados.length; i++) {
+    
+        for (int i = 0; i < dados.length; i++) {
             valorTotal += Double.parseDouble(dados[i][8]);
         }
-
+    
         System.out.println("Número de vendas: " + numVendas);
-        System.out.println("Valor total de vendas: " + valorTotal + "€");
+        System.out.printf("Valor total de vendas: %.2f EUR\n", valorTotal);
     }
-
+    
     // função 3
     public static void totalDeLucro(String[][] dados) {
         double lucroTotal = 0;
-
+    
         for (int i = 1; i < dados.length; i++) {
             double valorVenda = Double.parseDouble(dados[i][8]);
             double lucro = valorVenda * 0.1;
             lucroTotal += lucro;
         }
-
-        System.out.println("Total de lucro: " + lucroTotal + "€");
+    
+        System.out.printf("Total de lucro: %.2f EUR\n", lucroTotal);
     }
+    
 
     // função 4
     public static void informacoesCliente(String[][] dados) {
@@ -195,55 +204,51 @@ public class FA_04 {
         }
     }
 
-    // função 5
-    public static void generosEJogosPorEditora(String[][] dados) {
-        Scanner input = new Scanner(System.in);
+// função 5
+public static void generosEJogosPorEditora(String[][] dados) {
+    Scanner input = new Scanner(System.in);
+
+    System.out.print("Insira o nome da editora: ");
+    String editora = input.nextLine();
+
+    boolean encontrouJogos = false;
+      
+    for (int i = 1; i < dados.length; i++) {
+        if (dados[i][5].equals(editora)) {
+            System.out.println("Género: " + dados[i][6]);
+            System.out.println("Jogo: " + dados[i][7]);
+            encontrouJogos = true;
+        }
+    }
+
+    if (!encontrouJogos) {
+        System.out.println("Não foram encontrados jogos para a editora " + editora);
+    }
+}
+
+    // função 6
+    public static void jogoMaisCaroEClientes(String[][] dados) {
+        double precoMaximo = Double.MIN_VALUE;
+        String jogoMaisCaro = "";
+        String clientesQueCompraram = "";
     
-        System.out.print("Insira o nome da editora: ");
-        String editora = input.nextLine();
-    
-        boolean encontrou = false;
-    
+        // Encontra o jogo mais caro
         for (int i = 1; i < dados.length; i++) {
-            if (dados[i][5].equals(editora)) {
-                System.out.println("Gênero: " + dados[i][6]);
-                System.out.println("Jogo: " + dados[i][7]);
-                encontrou = true;
+            double precoAtual = Double.parseDouble(dados[i][8]);
+    
+            if (precoAtual > precoMaximo) {
+                precoMaximo = precoAtual;
+                jogoMaisCaro = dados[i][7];
             }
         }
     
-        if (!encontrou) {
-            System.out.println("Não foram encontrados jogos para a editora " + editora);
+        // Encontra os clientes que compraram o jogo mais caro
+        for (int i = 1; i < dados.length; i++) {
+            if (dados[i][7].equals(jogoMaisCaro)) {
+                clientesQueCompraram += dados[i][2] + ", ";
+            }
         }
-    }
-
-    // função 6
-    
-    public static void jogoMaisCaroEClientes(String[][] dados) {
-    double precoMaximo = Double.MIN_VALUE;
-    String jogoMaisCaro = "";
-    String clientesQueCompraram = "";
-
-    // Encontra o jogo mais caro
-    for (int i = 1; i < dados.length; i++) {
-        double precoAtual = Double.parseDouble(dados[i][8]);
-
-        if (precoAtual > precoMaximo) {
-            precoMaximo = precoAtual;
-            jogoMaisCaro = dados[i][7];
-        }
-    }
-
-    // Encontra os clientes que compraram o jogo mais caro
-    for (int i = 1; i < dados.length; i++) {
-        if (dados[i][7].equals(jogoMaisCaro)) {
-            clientesQueCompraram += dados[i][2] + ", ";
-        }
-    }
-
-    // Imprime o resultado
-    System.out.println("O jogo mais caro é " + jogoMaisCaro + ", comprado pelos seguintes clientes: " + clientesQueCompraram);
+        // Imprime o resultado
+        System.out.println("O jogo mais caro é " + jogoMaisCaro + ", comprado pelos seguintes clientes: " + clientesQueCompraram);
+    }   
 }
-}
-    
-

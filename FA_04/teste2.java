@@ -2,7 +2,7 @@ import java.io.File;
 import java.io.IOException;
 import java.util.Scanner;
 
-public class CsvMenu {
+public class teste2 {
     private static String[][] data;
     private static int numRows;
     private static int numColumns;
@@ -14,7 +14,7 @@ public class CsvMenu {
 
     private static void readFile() {
         try {
-            File csvFile = new File("sales.csv");
+            File csvFile = new File("GameStart.csv");
             Scanner scanner = new Scanner(csvFile);
 
             // Get number of rows and columns in the CSV file
@@ -74,7 +74,7 @@ public class CsvMenu {
                 case 2:
                     printSalesInfo();
                     break;
-                case 3:
+/*                 case 3:
                     printTotalProfit();
                     break;
                 case 4:
@@ -85,7 +85,7 @@ public class CsvMenu {
                     break;
                 case 6:
                     printMostExpensiveGame();
-                    break;
+                    break; */
                 case 7:
                     System.out.println("Goodbye!");
                     break;
@@ -118,8 +118,4 @@ public class CsvMenu {
         System.out.printf("Number of sales: %d\n", numSales);
         System.out.printf("Total revenue: %.2f\n", totalRevenue);
     }
-
-    private static void printTotalProfit() {
-        double totalRevenue = 0.0;
-
-        for (
+}
