@@ -211,27 +211,41 @@ public class FA_04 {
     // função 5
     public static void generosEJogosPorEditora(String[][] dados) {
         Scanner input = new Scanner(System.in);
-
+    
         System.out.print("Insira o nome da editora: ");
         String editora = input.nextLine();
-
         boolean encontrouJogos = false;
-
+    
+        // create an array to keep track of printed game titles
+        String[] printedGames = new String[dados.length - 1];
+        int numPrintedGames = 0;
+    
         for (int i = 1; i < dados.length; i++) {
-            if (dados[i][5].equals(editora))
-            /*  String 
-                if( dados[i][7]) */
-                //se o nome do jogo for repetido, ignorar
-            {
-                System.out.println("Género: " + dados[i][6]);
-                System.out.println("Jogo: " + dados[i][7]);
-                encontrouJogos = true;
+            if (dados[i][5].equals(editora)) {
+                String jogo = dados[i][7];
+                // check if game title has already been printed
+                boolean jaImpresso = false;
+                for (int j = 0; j < numPrintedGames; j++) {
+                    if (printedGames[j].equals(jogo)) {
+                        jaImpresso = true;
+                        break;
+                    }
+                }
+                if (!jaImpresso) {
+                    System.out.println("Género: " + dados[i][6]);
+                    System.out.println("Jogo: " + jogo);
+                    encontrouJogos = true;
+                    // add game title to printedGames array
+                    printedGames[numPrintedGames] = jogo;
+                    numPrintedGames++;
+                }
             }
         }
         if (!encontrouJogos) {
             System.out.println("Não foram encontrados jogos para a editora " + editora);
         }
     }
+    
 /*  ------------------------------------------------------------------------------------------------------------------------------------ */
     // função 6
     public static void jogoMaisCaroEClientes(String[][] dados) {
@@ -256,7 +270,7 @@ public class FA_04 {
         }
         // Imprime o resultado
         System.out.println(
-                "O jogo mais caro é " + jogoMaisCaro + ", comprado pelos seguintes clientes: " + clientesQueCompraram);
+                "O jogo mais caro é " + jogoMaisCaro + " que custa " + precoMaximo + " EUR, comprado pelos seguintes clientes: " + clientesQueCompraram);
     }
 
 }
