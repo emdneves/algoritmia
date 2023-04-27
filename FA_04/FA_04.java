@@ -102,7 +102,20 @@ public class FA_04 {
             System.out.println("6. Imprimir o jogo mais caro e os clientes que o compraram");
             System.out.println("7. Sair");
 
-            opcao = scanner.nextInt();
+            // loop until user enters a valid input
+            while (true) {
+                try {
+                    opcao = Integer.parseInt(scanner.nextLine());
+                    if (opcao >= 1 && opcao <= 7) {
+                        break; // valid input, exit loop
+                    } else {
+                        System.out.println("Opção inválida. Insira um número entre 1 e 7:");
+                    }
+                } catch (NumberFormatException e) {
+                    System.out.println("Opção inválida. Insira um número entre 1 e 7:");
+                    System.out.println("Erro: " + e.getMessage());
+                }
+            }
 
             switch (opcao) {
                 case 1:
@@ -131,9 +144,12 @@ public class FA_04 {
             }
         }
         scanner.close(); // closing the scanner
-
     }
-/*  ------------------------------------------------------------------------------------------------------------------------------------ */
+
+    /*
+     * -----------------------------------------------------------------------------
+     * -------------------------------------------------------
+     */
     // função 1
     public static void imprimirDados(String[][] dados) {
         // Calculate the maximum width for each column
@@ -157,7 +173,10 @@ public class FA_04 {
             System.out.println();
         }
     }
-/*  ------------------------------------------------------------------------------------------------------------------------------------ */
+    /*
+     * -----------------------------------------------------------------------------
+     * -------------------------------------------------------
+     */
     // função 2
 
     public static void vendasEValorTotal(String[][] dados) {
@@ -167,11 +186,14 @@ public class FA_04 {
         for (int i = 0; i < dados.length; i++) {
             valorTotal += Double.parseDouble(dados[i][8]);
         }
-
         System.out.println("Número de vendas: " + numVendas);
         System.out.printf("Valor total de vendas: %.2f EUR\n", valorTotal);
     }
-/*  ------------------------------------------------------------------------------------------------------------------------------------ */
+
+    /*
+     * -----------------------------------------------------------------------------
+     * -------------------------------------------------------
+     */
 
     // função 3
     public static void totalDeLucro(String[][] dados) {
@@ -182,10 +204,12 @@ public class FA_04 {
             double lucro = valorVenda * 0.1;
             lucroTotal += lucro;
         }
-
         System.out.printf("Total de lucro: %.2f EUR\n", lucroTotal);
     }
-/*  ------------------------------------------------------------------------------------------------------------------------------------ */
+    /*
+     * -----------------------------------------------------------------------------
+     * -------------------------------------------------------
+     */
 
     // função 4
     public static void informacoesCliente(String[][] dados) {
@@ -207,19 +231,23 @@ public class FA_04 {
             System.out.println("Não foram encontradas informações para o idCliente " + idCliente);
         }
     }
-/*  ------------------------------------------------------------------------------------------------------------------------------------ */
+
+    /*
+     * -----------------------------------------------------------------------------
+     * -------------------------------------------------------
+     */
     // função 5
     public static void generosEJogosPorEditora(String[][] dados) {
         Scanner input = new Scanner(System.in);
-    
+
         System.out.print("Insira o nome da editora: ");
         String editora = input.nextLine();
         boolean encontrouJogos = false;
-    
+
         // create an array to keep track of printed game titles
         String[] printedGames = new String[dados.length - 1];
         int numPrintedGames = 0;
-    
+
         for (int i = 1; i < dados.length; i++) {
             if (dados[i][5].equals(editora)) {
                 String jogo = dados[i][7];
@@ -245,8 +273,11 @@ public class FA_04 {
             System.out.println("Não foram encontrados jogos para a editora " + editora);
         }
     }
-    
-/*  ------------------------------------------------------------------------------------------------------------------------------------ */
+
+    /*
+     * -----------------------------------------------------------------------------
+     * -------------------------------------------------------
+     */
     // função 6
     public static void jogoMaisCaroEClientes(String[][] dados) {
         double precoMaximo = Double.MIN_VALUE;
@@ -270,7 +301,8 @@ public class FA_04 {
         }
         // Imprime o resultado
         System.out.println(
-                "O jogo mais caro é " + jogoMaisCaro + " que custa " + precoMaximo + " EUR, comprado pelos seguintes clientes: " + clientesQueCompraram);
+                "O jogo mais caro é " + jogoMaisCaro + " que custa " + precoMaximo
+                        + " EUR, comprado pelos seguintes clientes: " + clientesQueCompraram);
     }
 
 }
