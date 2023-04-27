@@ -130,8 +130,11 @@ public class FA_04 {
                     System.out.println("Opção inválida");
             }
         }
-    }
+        scanner.close(); // closing the scanner
 
+    }
+/*  ------------------------------------------------------------------------------------------------------------------------------------ */
+    // função 1
     public static void imprimirDados(String[][] dados) {
         // Calculate the maximum width for each column
         int[] maxColWidths = new int[dados[0].length];
@@ -154,32 +157,35 @@ public class FA_04 {
             System.out.println();
         }
     }
+/*  ------------------------------------------------------------------------------------------------------------------------------------ */
+    // função 2
 
     public static void vendasEValorTotal(String[][] dados) {
         int numVendas = dados.length;
         double valorTotal = 0;
-    
+
         for (int i = 0; i < dados.length; i++) {
             valorTotal += Double.parseDouble(dados[i][8]);
         }
-    
+
         System.out.println("Número de vendas: " + numVendas);
         System.out.printf("Valor total de vendas: %.2f EUR\n", valorTotal);
     }
-    
+/*  ------------------------------------------------------------------------------------------------------------------------------------ */
+
     // função 3
     public static void totalDeLucro(String[][] dados) {
         double lucroTotal = 0;
-    
-        for (int i = 1; i < dados.length; i++) {
+
+        for (int i = 0; i < dados.length; i++) {
             double valorVenda = Double.parseDouble(dados[i][8]);
             double lucro = valorVenda * 0.1;
             lucroTotal += lucro;
         }
-    
+
         System.out.printf("Total de lucro: %.2f EUR\n", lucroTotal);
     }
-    
+/*  ------------------------------------------------------------------------------------------------------------------------------------ */
 
     // função 4
     public static void informacoesCliente(String[][] dados) {
@@ -187,7 +193,6 @@ public class FA_04 {
 
         System.out.print("Insira o idCliente: ");
         String idCliente = input.nextLine();
-
         boolean encontrou = false;
 
         for (int i = 1; i < dados.length; i++) {
@@ -198,50 +203,51 @@ public class FA_04 {
                 encontrou = true;
             }
         }
-
         if (!encontrou) {
             System.out.println("Não foram encontradas informações para o idCliente " + idCliente);
         }
     }
+/*  ------------------------------------------------------------------------------------------------------------------------------------ */
+    // função 5
+    public static void generosEJogosPorEditora(String[][] dados) {
+        Scanner input = new Scanner(System.in);
 
-// função 5
-public static void generosEJogosPorEditora(String[][] dados) {
-    Scanner input = new Scanner(System.in);
+        System.out.print("Insira o nome da editora: ");
+        String editora = input.nextLine();
 
-    System.out.print("Insira o nome da editora: ");
-    String editora = input.nextLine();
+        boolean encontrouJogos = false;
 
-    boolean encontrouJogos = false;
-      
-    for (int i = 1; i < dados.length; i++) {
-        if (dados[i][5].equals(editora)) {
-            System.out.println("Género: " + dados[i][6]);
-            System.out.println("Jogo: " + dados[i][7]);
-            encontrouJogos = true;
+        for (int i = 1; i < dados.length; i++) {
+            if (dados[i][5].equals(editora))
+            /*  String 
+                if( dados[i][7]) */
+                //se o nome do jogo for repetido, ignorar
+            {
+                System.out.println("Género: " + dados[i][6]);
+                System.out.println("Jogo: " + dados[i][7]);
+                encontrouJogos = true;
+            }
+        }
+        if (!encontrouJogos) {
+            System.out.println("Não foram encontrados jogos para a editora " + editora);
         }
     }
-
-    if (!encontrouJogos) {
-        System.out.println("Não foram encontrados jogos para a editora " + editora);
-    }
-}
-
+/*  ------------------------------------------------------------------------------------------------------------------------------------ */
     // função 6
     public static void jogoMaisCaroEClientes(String[][] dados) {
         double precoMaximo = Double.MIN_VALUE;
         String jogoMaisCaro = "";
         String clientesQueCompraram = "";
-    
+
         // Encontra o jogo mais caro
         for (int i = 1; i < dados.length; i++) {
             double precoAtual = Double.parseDouble(dados[i][8]);
-    
+
             if (precoAtual > precoMaximo) {
                 precoMaximo = precoAtual;
                 jogoMaisCaro = dados[i][7];
             }
         }
-    
         // Encontra os clientes que compraram o jogo mais caro
         for (int i = 1; i < dados.length; i++) {
             if (dados[i][7].equals(jogoMaisCaro)) {
@@ -249,6 +255,8 @@ public static void generosEJogosPorEditora(String[][] dados) {
             }
         }
         // Imprime o resultado
-        System.out.println("O jogo mais caro é " + jogoMaisCaro + ", comprado pelos seguintes clientes: " + clientesQueCompraram);
-    }   
+        System.out.println(
+                "O jogo mais caro é " + jogoMaisCaro + ", comprado pelos seguintes clientes: " + clientesQueCompraram);
+    }
+
 }
