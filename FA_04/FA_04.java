@@ -53,6 +53,9 @@ import java.io.IOException;
 import java.util.Scanner;
 
 public class FA_04 {
+
+    /* função main --------------------------------------------------------------------------------------------------------------------------*/
+
     public static void main(String[] args) {
         String[][] dados = lerDados();
         menu(dados);
@@ -87,6 +90,8 @@ public class FA_04 {
         }
         return dados;
     }
+
+     /* função menu --------------------------------------------------------------------------------------------------------------------------*/
 
     public static void menu(String[][] dados) {
         Scanner scanner = new Scanner(System.in);
@@ -149,11 +154,8 @@ public class FA_04 {
         scanner.close(); // closing the scanner
     }
 
-    /*
-     * -----------------------------------------------------------------------------
-     * -------------------------------------------------------
-     */
-    // função 1
+    /* função 1--------------------------------------------------------------------------------------------------------------------------*/
+
     public static void imprimirDados(String[][] dados) {
         // Calculate the maximum width for each column
         int[] maxColWidths = new int[dados[0].length];
@@ -176,11 +178,8 @@ public class FA_04 {
             System.out.println();
         }
     }
-    /*
-     * -----------------------------------------------------------------------------
-     * -------------------------------------------------------
-     */
-// função 2
+    /* função 2--------------------------------------------------------------------------------------------------------------------------*/
+
 public static double[] vendasEValorTotal(String[][] dados) {
     int numVendas = dados.length;
     double valorTotal = 0;
@@ -196,20 +195,16 @@ public static double[] vendasEValorTotal(String[][] dados) {
     return result;
 }
 
-// função 3
-public static double totalDeLucro(String[][] dados) {
+    /* função 3--------------------------------------------------------------------------------------------------------------------------*/
+    public static double totalDeLucro(String[][] dados) {
     double valorTotal = vendasEValorTotal(dados)[1];
     double lucro = valorTotal * 0.10;
     return lucro;
 }
 
 
-    /*
-     * -----------------------------------------------------------------------------
-     * -------------------------------------------------------
-     */
+    /* função 4--------------------------------------------------------------------------------------------------------------------------*/
 
-    // função 4
     public static void informacoesCliente(String[][] dados) {
         Scanner input = new Scanner(System.in);
 
@@ -230,13 +225,8 @@ public static double totalDeLucro(String[][] dados) {
         }
     }
 
-    /*
-     * -----------------------------------------------------------------------------
-     * -------------------------------------------------------
-     */
+    /* função 5--------------------------------------------------------------------------------------------------------------------------*/
 
-
-    // função 5
 public static void generosEJogosPorEditora(String[][] dados) {
     Scanner input = new Scanner(System.in);
 
@@ -276,10 +266,8 @@ public static void generosEJogosPorEditora(String[][] dados) {
     }
 }
 
-       /*
-     * -----------------------------------------------------------------------------
-     * -------------------------------------------------------
-     */
+    /* função auxiliar --------------------------------------------------------------------------------------------------------------------------*/
+
 // função auxiliar para mostrar as editoras disponíveis
 public static void listarEditoras(String[][] dados) {
     // create an array to keep track of printed editoras
@@ -307,11 +295,8 @@ public static void listarEditoras(String[][] dados) {
     }
 }
 
-    /*
-     * -----------------------------------------------------------------------------
-     * -------------------------------------------------------
-     */
-    // função 6
+    /*função 6 --------------------------------------------------------------------------------------------------------------------------*/
+
     public static void jogoMaisCaroEClientes(String[][] dados) {
         double precoMaximo = Double.MIN_VALUE;
         String jogoMaisCaro = "";
