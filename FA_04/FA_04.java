@@ -68,6 +68,9 @@ ser uma função própria (objeto de valorização)).
 - função 5,  usamos a mesma lógica da função auxiliar para remover os items duplicados, mas neste cas, os jogos, imprimindo-se os campos género e jogos de cada editor
 - função 6, iteramos sobre toddos os valores dos jogos e descobrimos o mais caro, que vai ficar guardado numa variavel temporaria. depois usamos outro loop paraa descobrir que clientes o compraram. no fim é só imprimr o nome dos clientes correspondentes
 
+
+poder-se-ia optar por usar a função 1 para ler os dados em todas as funções, mas isso causaria uma leitura do ficheiro e transformação em matriz de cada vez que isso acontecesse, iamos chamar a função, ela ia ler o ficheiro, gurardar numa matriz e retornar os dados.
+Como guardamos logo os ficheiros na matriz, nas funções seguintes, só temos que usar a matriz em todos os ficheiros. 
 */ 
 
 import java.io.File;
