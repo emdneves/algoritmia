@@ -51,13 +51,14 @@ public class Produto {
             System.out.println("\nDepois da compra: ");
             System.out.println("Existem " + caneta.getStock() + " " + nome);
         } else if (op.equals("venda")) {
-            caneta.setVenda(alteraStock);
-            System.out.println("\nDepois da venda: ");
-            System.out.println("Existem " + caneta.getStock() + " " + nome);
-        }
-
-        else {
-            System.out.println("erro, introduza compra ou venda");
+            if ((caneta.getStock() - alteraStock) > 0) {
+                caneta.setVenda(alteraStock);
+                System.out.println("\nDepois da venda: ");
+                System.out.println("Existem " + caneta.getStock() + " " + nome);
+            } else
+                System.out.println("\nNão existe quantidade suficiente em stock: ");
+        } else {
+            System.out.println("Erro, introduza compra ou venda");
         }
     }
 }
