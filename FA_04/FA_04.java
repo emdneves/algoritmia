@@ -57,20 +57,18 @@ ser uma função própria (objeto de valorização)).
 - assim, temos um scanner com um loop para descobrir o tamanho da matriz e um segundo pra o preencher (podiamos usar um array, mas teriamos que andar a fazer contas de 9 em 9 em todas as operações, o qe iria comprometer a legibilidade)
 - na função menu, temos um switch case com um try catch e um while para dar feedback ao tulizador caso insira uma opção inválida e volte a perguntar até este escolher a opção 7, sair
     note-se que excepto as alineas 2 e 3, as otras funções nã dão um return mas um print. isso deve-se ao uso da função 2 na 3
-- na alinea 1, simplesmente imprimimos a matriz, e para a formatar, usamos um loop que descobre o tamanho do item que ocupa mais caracteres em cada matriz, depois ao imprimir é só formatar os espaços 
-- na função 2,
-- 
-
-
-
+- função 1, simplesmente imprimimos a matriz, e para a formatar, usamos um loop que descobre o tamanho do item que ocupa mais caracteres em cada matriz, depois ao imprimir é só formatar os espaços 
+- função 2, vamos so iterar pela matriz, somando os valores da coluna valores e o dados.length vai nos dar o numero de vendas, uma vez que cada linha corresponde a uma venda
+    para podermos utilizar o valor na função seguinte, temos que o gurdar numm unico elemento, uma vez que uma função só retorna um elemento. 
+    Para isso, guardam-se osvalores num array de 2 posições, uma com o n de vendas e outraa com o somatório
+- função 3, usamos o valor restornado pela função 2, na posição 1, que é o somatório de vendas e multiplicamos pr 0.10
+- função 4, iteramos sobre a matriz até descobrirmos o id do cliente e imprimimos as posições correspondentes aos pedidos, contando as posições das colunas(nome, contacto, email)
+- função auxiliar, durante os testes ao programa, pareceu-me complicado testar várias editoras. Assim, para facilitar, antes de se inserir a editora pretendida, o programa disponibiliza uma lista de editoras disponíveis
+    para isso, recorremos novamente ao array dados, e iteramos pela coluna editoras. Para não se imprimirem editoras repetidas, vamos guardando os titlos ja impressos num arrray que tem o tamanho de todos os tilulos, assim este vai ficar parciamente vazio nas ultimas posições e conter apenas editoras não repetidas
+- função 5,  usamos a mesma lógica da função auxiliar para remover os items duplicados, mas neste cas, os jogos, imprimindo-se os campos género e jogos de cada editor
+- função 6, iteramos sobre toddos os valores dos jogos e descobrimos o mais caro, que vai ficar guardado numa variavel temporaria. depois usamos outro loop paraa descobrir que clientes o compraram. no fim é só imprimr o nome dos clientes correspondentes
 
 */ 
-
-
-
-
-
- 
 
 import java.io.File;
 import java.io.IOException;
@@ -78,138 +76,142 @@ import java.util.Scanner;
 
 public class FA_04 {
 
-    /* função main --------------------------------------------------------------------------------------------------------------------------*/
+    /* -----------------------------------------------------------------------função main --------------------------------------------------------------------------------------------------------------------------*/
 
     public static void main(String[] args) {
         String[][] dados = lerDados();
         menu(dados);
-    }
 
+    }
+     /* -----------------------------------------------------------------------função lerdados --------------------------------------------------------------------------------------------------------------------------*/
 /*  - nas 6 alineas vamos sempre precisar de aceeder aos valores do ficheiro. Assim, para evitar termos um scanner para cada, opta-se por guardar à priori os valores do ficheiro numa matriz, excluindo-se o cabeçalho. 
     - isso é feito logo numa função lerDados, assim, caso o nome do ficheiro seja alterado, só temos que ir alterar o nome do ficheiro nos dois scanners 
     - que eu saiba, não se conseguiria faazer só com um scanner, uma vez que ainda não demos listas e precisamos de saber o quantidade de linhas para criarmos a matriz e posteriormente, preenche-lo
     - assim, temos um scanner com um loop para descobrir o tamanho da matriz e um segundo pra o preencher (podiamos usar um array, mas teriamos que andar a fazer contas de 9 em 9 em todas as operações, o qe iria comprometer a legibilidade)
     */
-    public static String[][] lerDados() {
-        String[][] dados = null;
-        try {
-            Scanner scanner = new Scanner(new File("GameStart.csv"));
-            int numLinhas = 0;
+public static String[][] lerDados() {
+    String[][] dados = null;
+    try {
+        Scanner scanner = new Scanner(new File("GameStart.csv"));
+        int numLinhas = 0;
+        scanner.nextLine();
+        while (scanner.hasNextLine()) {
             scanner.nextLine();
-            while (scanner.hasNextLine()) {
-                scanner.nextLine();
-                numLinhas++;
-            }
-            scanner.close();
-            dados = new String[numLinhas][9];
-            scanner = new Scanner(new File("GameStart.csv"));
-            scanner.nextLine();
-            int linha = 0;
-            while (scanner.hasNextLine()) {
-                String linhaDados = scanner.nextLine();
-                String[] campos = linhaDados.split(";");
-                for (int coluna = 0; coluna < campos.length; coluna++) {
-                    dados[linha][coluna] = campos[coluna];
-                }
-                linha++;
-            }
-            scanner.close();
-        } catch (IOException e) {
-            System.out.println("Erro ao ler o ficheiro: " + e.getMessage());
+            numLinhas++;
         }
-        return dados;
+        scanner.close();
+        dados = new String[numLinhas][9];
+        scanner = new Scanner(new File("GameStart.csv"));
+        scanner.nextLine();
+        int linha = 0;
+        while (scanner.hasNextLine()) {
+            String linhaDados = scanner.nextLine();
+            String[] campos = linhaDados.split(";");
+            for (int coluna = 0; coluna < campos.length; coluna++) {
+                dados[linha][coluna] = campos[coluna];
+            }
+            linha++;
+        }
+        scanner.close();
+    } catch (IOException e) {
+        System.out.println("Erro ao ler o ficheiro: " + e.getMessage());
     }
+    return dados;
+}
 
-     /* função menu --------------------------------------------------------------------------------------------------------------------------*/
+     /* -----------------------------------------------------------------------função menu --------------------------------------------------------------------------------------------------------------------------*/
 /*  - na função menu, temos um switch case com um try catch e um while para dar feedback ao tulizador caso insira uma opção inválida e volte a perguntar até este escolher a opção 7, sair
      note-se que excepto a alinea 2, as outras funções nã dão um return mas um print. isso deve-se ao uso da função 2 na 3 e termos que dar um return para poder reutilizar o valor */
-    public static void menu(String[][] dados) {
-        Scanner scanner = new Scanner(System.in);
-        int opcao = 0;
+public static void menu(String[][] dados) {
+    Scanner scanner = new Scanner(System.in);
+    int opcao = 0;
 
-        while (opcao != 7) {
-            System.out.println("\n\nEscolha uma opção:");
-            System.out.println("1. Imprimir todos os dados");
-            System.out.println("2. Imprimir quantas vendas foram executadas e o seu valor total");
-            System.out.println("3. Calcular o total de lucro da GameStart");
-            System.out.println("4. Imprimir todas as informações associadas a um idCliente");
-            System.out.println("5. Imprimir todos géneros e os respetivos jogos de uma Editora");
-            System.out.println("6. Imprimir o jogo mais caro e os clientes que o compraram");
-            System.out.println("7. Sair");
+    while (opcao != 7) {
+        System.out.println("\n\nEscolha uma opção:");
+        System.out.println("1. Imprimir todos os dados");
+        System.out.println("2. Imprimir quantas vendas foram executadas e o seu valor total");
+        System.out.println("3. Calcular o total de lucro da GameStart");
+        System.out.println("4. Imprimir todas as informações associadas a um idCliente");
+        System.out.println("5. Imprimir todos géneros e os respetivos jogos de uma Editora");
+        System.out.println("6. Imprimir o jogo mais caro e os clientes que o compraram");
+        System.out.println("7. Sair");
 
-            // loop until user enters a valid input
-            while (true) {
-                try {
-                    opcao = Integer.parseInt(scanner.nextLine());
-                    if (opcao >= 1 && opcao <= 7) {
-                        break; // valid input, exit loop
-                    } else {
-                        System.out.println("Opção inválida. Insira um número entre 1 e 7:");
-                    }
-                } catch (NumberFormatException e) {
+        // loop até o utilizador inserir um input válido
+        while (true) {
+            try {
+                opcao = Integer.parseInt(scanner.nextLine());
+                if (opcao >= 1 && opcao <= 7) {
+                    break;
+                } else {
                     System.out.println("Opção inválida. Insira um número entre 1 e 7:");
-                    System.out.println("Erro: " + e.getMessage());
                 }
-            }
-
-            switch (opcao) {
-                case 1:
-                    imprimirDados(dados);
-                    break;
-                case 2:
-                    double[] vendasEValor = vendasEValorTotal(dados);
-                    System.out.printf("O total de vendas foi %d e o valor total das vendas foi %.2f EUR\n", (int)vendasEValor[0], vendasEValor[1]);
-                    break;
-                case 3:
-                    totalDeLucro(dados);                
-                    break;
-            
-                case 4:
-                    informacoesCliente(dados);
-                    break;
-                case 5:
-                    generosEJogosPorEditora(dados);
-                    break;
-                case 6:
-                    jogoMaisCaroEClientes(dados);
-                    break;
-                case 7:
-                    System.out.println("Sair");
-                    break;
-                default:
-                    System.out.println("Opção inválida");
+            } catch (NumberFormatException e) {
+                System.out.println("Opção inválida. Insira um número entre 1 e 7:");
+                System.out.println("Erro: " + e.getMessage());
             }
         }
-        scanner.close(); // closing the scanner
-    }
 
-    /* função 1--------------------------------------------------------------------------------------------------------------------------*/
+        switch (opcao) {
+            case 1:
+                imprimirDados(dados);
+                break;
+            case 2:
+                double[] vendasEValor = vendasEValorTotal(dados);
+                System.out.printf("O total de vendas foi %d e o valor total das vendas foi %.2f EUR\n",
+                        (int) vendasEValor[0], vendasEValor[1]);
+                break;
+            case 3:
+                totalDeLucro(dados);
+                break;
+
+            case 4:
+                informacoesCliente(dados);
+                break;
+            case 5:
+                generosEJogosPorEditora(dados);
+                break;
+            case 6:
+                jogoMaisCaroEClientes(dados);
+                break;
+            case 7:
+                System.out.println("Sair");
+                break;
+            default:
+                System.out.println("Opção inválida");
+        }
+    }
+    scanner.close();
+}
+
+    /* -----------------------------------------------------------------------função 1--------------------------------------------------------------------------------------------------------------------------*/
 /*  - na alinea 1, simplesmente imprimimos a matriz, e para a formatar, usamos um loop que descobre o tamanho do item que ocupa mais caracteres em cada matriz, depois ao imprimir é só formatar os espaços 
  */
 
-    public static void imprimirDados(String[][] dados) {
-        // Calculate the maximum width for each column
-        int[] maxColWidths = new int[dados[0].length];
-        for (int coluna = 0; coluna < dados[0].length; coluna++) {
-            int max = 0;
-            for (int linha = 0; linha < dados.length; linha++) {
-                int len = dados[linha][coluna].length();
-                if (len > max) {
-                    max = len;
-                }
-            }
-            maxColWidths[coluna] = max;
-        }
-        // Print the data with aligned columns
+public static void imprimirDados(String[][] dados) {
+    // calculara dimensão máxima de cada coluna
+    int[] largMaxColuna = new int[dados[0].length];
+    for (int coluna = 0; coluna < dados[0].length; coluna++) {
+        int max = 0;
         for (int linha = 0; linha < dados.length; linha++) {
-            for (int coluna = 0; coluna < dados[linha].length; coluna++) {
-                // Use printf to specify a fixed width for each field
-                System.out.printf("%-" + maxColWidths[coluna] + "s ", dados[linha][coluna]);
+            int len = dados[linha][coluna].length();
+            if (len > max) {
+                max = len;
             }
-            System.out.println();
         }
+        largMaxColuna[coluna] = max;
     }
-    /* função 2--------------------------------------------------------------------------------------------------------------------------*/
+    // imprimir os dados alinhados
+    for (int linha = 0; linha < dados.length; linha++) {
+        for (int coluna = 0; coluna < dados[linha].length; coluna++) {
+            System.out.printf("%-" + largMaxColuna[coluna] + "s ", dados[linha][coluna]);
+        }
+        System.out.println();
+    }
+}
+    /* -----------------------------------------------------------------------função 2--------------------------------------------------------------------------------------------------------------------------*/
+/*     - função 2, vamos so iterar pela matriz, somando os valores da coluna valores e o dados.length vai nos dar o numero de vendas, uma vez que cada linha corresponde a uma venda
+    para podermos utilizar o valor na função seguinte, temos que o gurdar numm unico elemento, uma vez que uma função só retorna um elemento. 
+    Para isso, guardam-se osvalores num array de 2 posições, uma com o n de vendas e outraa com o somatório */
 
 public static double[] vendasEValorTotal(String[][] dados) {
     int numVendas = dados.length;
@@ -218,45 +220,53 @@ public static double[] vendasEValorTotal(String[][] dados) {
     for (int i = 0; i < dados.length; i++) {
         valorTotal += Double.parseDouble(dados[i][8]);
     }
-    
+
+    // retornar o resultado em forma de array com 2 posições, uma com o numero de
+    // vendas e um com o valor total de vendas
     double[] result = new double[2];
     result[0] = numVendas;
     result[1] = valorTotal;
-    
+
     return result;
 }
 
-/* função 3 -------------------------------------------------------------------*/
-public static void totalDeLucro(String[][] dados) {
-    double valorTotal = vendasEValorTotal(dados)[1];
-    double lucro = valorTotal * 0.10;
-    System.out.printf("O total de lucro é %.2f EUR\n", lucro);
-}
-
-    /* função 4--------------------------------------------------------------------------------------------------------------------------*/
-
-    public static void informacoesCliente(String[][] dados) {
-        Scanner input = new Scanner(System.in);
-
-        System.out.print("Insira o idCliente: ");
-        String idCliente = input.nextLine();
-        boolean encontrou = false;
-
-        for (int i = 1; i < dados.length; i++) {
-            if (dados[i][1].equals(idCliente)) {
-                System.out.println("Nome: " + dados[i][2]);
-                System.out.println("Contacto: " + dados[i][3]);
-                System.out.println("Email: " + dados[i][4]);
-                encontrou = true;
-            }
-        }
-        if (!encontrou) {
-            System.out.println("Não foram encontradas informações para o idCliente " + idCliente);
-        }
+    /* -----------------------------------------------------------------------função 3--------------------------------------------------------------------------------------------------------------------------*/
+/*     - função 3, usamos o valor restornado pela função 2, na posição 1, que é o somatório de vendas e multiplicamos pr 0.10
+ */
+    //usar a função do exercicio 2, ficando-se so com a coluna 1 correspondente ao valor total de venda, guardar numa variavel e multiplicar por 0.10
+    public static void totalDeLucro(String[][] dados) {
+        double valorTotal = vendasEValorTotal(dados)[1];
+        double lucro = valorTotal * 0.10;
+        System.out.printf("O total de lucro é %.2f EUR\n", lucro);
     }
 
-    /* função 5--------------------------------------------------------------------------------------------------------------------------*/
+    /* -----------------------------------------------------------------------função 4--------------------------------------------------------------------------------------------------------------------------*/
+/*     - função 4, iteramos sobre a matriz até descobrirmos o id do cliente e imprimimos as posições correspondentes aos pedidos, contando as posições das colunas(nome, contacto, email)
+ */
+public static void informacoesCliente(String[][] dados) {
+    Scanner input = new Scanner(System.in);
 
+    System.out.print("Insira o idCliente: ");
+    String idCliente = input.nextLine();
+    boolean encontrou = false;
+    // iterar sobre a matriz até descobrir o id cliente e imprimir os dados das
+    // colunas correspondentes
+    for (int i = 1; i < dados.length; i++) {
+        if (dados[i][1].equals(idCliente)) {
+            System.out.println("Nome: " + dados[i][2]);
+            System.out.println("Contacto: " + dados[i][3]);
+            System.out.println("Email: " + dados[i][4]);
+            encontrou = true;
+        }
+    }
+    if (!encontrou) {
+        System.out.println("Não foram encontradas informações para o idCliente " + idCliente);
+    }
+}
+
+    /* -----------------------------------------------------------------------função 5--------------------------------------------------------------------------------------------------------------------------*/
+/*     - função 5,  usamos a mesma lógica da função auxiliar para remover os items duplicados, mas neste cas, os jogos, imprimindo-se os campos género e jogos de cada editor
+ */
 public static void generosEJogosPorEditora(String[][] dados) {
     Scanner input = new Scanner(System.in);
 
@@ -266,17 +276,17 @@ public static void generosEJogosPorEditora(String[][] dados) {
     String editora = input.nextLine();
     boolean encontrouJogos = false;
 
-    // create an array to keep track of printed game titles
-    String[] printedGames = new String[dados.length - 1];
-    int numPrintedGames = 0;
+    // cria um array para acompanhar os jogos ja impressos
+    String[] jogosImpressos = new String[dados.length - 1];
+    int numJogosImpressos = 0;
 
     for (int i = 1; i < dados.length; i++) {
         if (dados[i][5].equals(editora)) {
             String jogo = dados[i][7];
-            // check if game title has already been printed
+            // verifica se o jogo já foi impresso
             boolean jaImpresso = false;
-            for (int j = 0; j < numPrintedGames; j++) {
-                if (printedGames[j].equals(jogo)) {
+            for (int j = 0; j < numJogosImpressos; j++) {
+                if (jogosImpressos[j].equals(jogo)) {
                     jaImpresso = true;
                     break;
                 }
@@ -285,9 +295,9 @@ public static void generosEJogosPorEditora(String[][] dados) {
                 System.out.println("Género: " + dados[i][6]);
                 System.out.println("Jogo: " + jogo);
                 encontrouJogos = true;
-                // add game title to printedGames array
-                printedGames[numPrintedGames] = jogo;
-                numPrintedGames++;
+                // adiciona o nome do jogo aos jogos já impressos
+                jogosImpressos[numJogosImpressos] = jogo;
+                numJogosImpressos++;
             }
         }
     }
@@ -296,60 +306,64 @@ public static void generosEJogosPorEditora(String[][] dados) {
     }
 }
 
-    /* função auxiliar --------------------------------------------------------------------------------------------------------------------------*/
+    /* -----------------------------------------------------------------------função auxiliar --------------------------------------------------------------------------------------------------------------------------*/
+ /*     - função auxiliar, durante os testes ao programa, pareceu-me complicado testar várias editoras. Assim, para facilitar, antes de se inserir a editora pretendida, o programa disponibiliza uma lista de editoras disponíveis
+    para isso, recorremos novamente ao array dados, e iteramos pela coluna editoras. Para não se imprimirem editoras repetidas, vamos guardando os titlos ja impressos num arrray que tem o tamanho de todos os tilulos, 
+    assim este vai ficar parciamente vazio nas ultimas posições e conter apenas editoras não repetidas */
 
-// função auxiliar para mostrar as editoras disponíveis
-public static void listarEditoras(String[][] dados) {
-    // create an array to keep track of printed editoras
-    String[] printedEditoras = new String[dados.length - 1];
-    int numPrintedEditoras = 0;
+ public static void listarEditoras(String[][] dados) {
+     // cria um array para acompanhar as editoras ja impressas
+     String[] editorasImpressas = new String[dados.length];
+     int numEditorasImpressas = 0;
 
-    System.out.println("Editoras disponíveis: ");
+     System.out.println("Editoras disponíveis: ");
 
+     for (int i = 1; i < dados.length; i++) {
+         String editora = dados[i][5];
+         // verifica se a editora já foi impressa
+         boolean jaImpresso = false;
+         for (int j = 0; j < numEditorasImpressas; j++) {
+             if (editorasImpressas[j].equals(editora)) {
+                 jaImpresso = true;
+                 break;
+             }
+         }
+         if (!jaImpresso) {
+             System.out.println("- " + editora);
+             // adiciona a editora ao array das edioras já impressas
+             editorasImpressas[numEditorasImpressas] = editora;
+             numEditorasImpressas++;
+         }
+     }
+ }
+
+    /* -----------------------------------------------------------------------função 6--------------------------------------------------------------------------------------------------------------------------*/
+/*     - função 6, iteramos sobre toddos os valores dos jogos e descobrimos o mais caro, que vai ficar guardado numa variavel temporaria. depois usamos outro loop paraa descobrir que clientes o compraram. no fim é só imprimr o nome dos clientes correspondentes
+ */
+public static void jogoMaisCaroEClientes(String[][] dados) {
+    double precoMaximo = Double.MIN_VALUE;
+    String jogoMaisCaro = "";
+    String clientesQueCompraram = "";
+
+    // Encontra o jogo mais caro
     for (int i = 1; i < dados.length; i++) {
-        String editora = dados[i][5];
-        // check if editora has already been printed
-        boolean jaImpresso = false;
-        for (int j = 0; j < numPrintedEditoras; j++) {
-            if (printedEditoras[j].equals(editora)) {
-                jaImpresso = true;
-                break;
-            }
-        }
-        if (!jaImpresso) {
-            System.out.println("- " + editora);
-            // add editora to printedEditoras array
-            printedEditoras[numPrintedEditoras] = editora;
-            numPrintedEditoras++;
+        double precoAtual = Double.parseDouble(dados[i][8]);
+
+        if (precoAtual > precoMaximo) {
+            precoMaximo = precoAtual;
+            jogoMaisCaro = dados[i][7];
         }
     }
+    // Encontra os clientes que compraram o jogo mais caro
+    for (int i = 1; i < dados.length; i++) {
+        if (dados[i][7].equals(jogoMaisCaro)) {
+            clientesQueCompraram += dados[i][2] + ", ";
+        }
+    }
+    // Imprime o resultado
+    System.out.println(
+            "O jogo mais caro é " + jogoMaisCaro + " que custa " + precoMaximo
+                    + " EUR, comprado pelos seguintes clientes: " + clientesQueCompraram);
 }
-
-    /*função 6 --------------------------------------------------------------------------------------------------------------------------*/
-
-    public static void jogoMaisCaroEClientes(String[][] dados) {
-        double precoMaximo = Double.MIN_VALUE;
-        String jogoMaisCaro = "";
-        String clientesQueCompraram = "";
-
-        // Encontra o jogo mais caro
-        for (int i = 1; i < dados.length; i++) {
-            double precoAtual = Double.parseDouble(dados[i][8]);
-
-            if (precoAtual > precoMaximo) {
-                precoMaximo = precoAtual;
-                jogoMaisCaro = dados[i][7];
-            }
-        }
-        // Encontra os clientes que compraram o jogo mais caro
-        for (int i = 1; i < dados.length; i++) {
-            if (dados[i][7].equals(jogoMaisCaro)) {
-                clientesQueCompraram += dados[i][2] + ", ";
-            }
-        }
-        // Imprime o resultado
-        System.out.println(
-                "O jogo mais caro é " + jogoMaisCaro + " que custa " + precoMaximo + " EUR, comprado pelos seguintes clientes: " + clientesQueCompraram);
-    }
 
 }
