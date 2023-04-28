@@ -122,11 +122,14 @@ public class FA_04 {
                     imprimirDados(dados);
                     break;
                 case 2:
-                    vendasEValorTotal(dados);
+                    double[] vendasEValor = vendasEValorTotal(dados);
+                    System.out.printf("O total de vendas foi %d e o valor total das vendas foi %.2f EUR\n", (int)vendasEValor[0], vendasEValor[1]);
                     break;
                 case 3:
-                    totalDeLucro(dados);
+                    double lucro = totalDeLucro(dados);
+                    System.out.printf("O lucro das vendas foi de %.2f EUR\n", lucro);
                     break;
+            
                 case 4:
                     informacoesCliente(dados);
                     break;
@@ -177,35 +180,30 @@ public class FA_04 {
      * -----------------------------------------------------------------------------
      * -------------------------------------------------------
      */
-    // função 2
+// função 2
+public static double[] vendasEValorTotal(String[][] dados) {
+    int numVendas = dados.length;
+    double valorTotal = 0;
 
-    public static void vendasEValorTotal(String[][] dados) {
-        int numVendas = dados.length;
-        double valorTotal = 0;
-
-        for (int i = 0; i < dados.length; i++) {
-            valorTotal += Double.parseDouble(dados[i][8]);
-        }
-        System.out.println("Número de vendas: " + numVendas);
-        System.out.printf("Valor total de vendas: %.2f EUR\n", valorTotal);
+    for (int i = 0; i < dados.length; i++) {
+        valorTotal += Double.parseDouble(dados[i][8]);
     }
+    
+    double[] result = new double[2];
+    result[0] = numVendas;
+    result[1] = valorTotal;
+    
+    return result;
+}
 
-    /*
-     * -----------------------------------------------------------------------------
-     * -------------------------------------------------------
-     */
+// função 3
+public static double totalDeLucro(String[][] dados) {
+    double valorTotal = vendasEValorTotal(dados)[1];
+    double lucro = valorTotal * 0.10;
+    return lucro;
+}
 
-    // função 3
-    public static void totalDeLucro(String[][] dados) {
-        double lucroTotal = 0;
 
-        for (int i = 0; i < dados.length; i++) {
-            double valorVenda = Double.parseDouble(dados[i][8]);
-            double lucro = valorVenda * 0.1;
-            lucroTotal += lucro;
-        }
-        System.out.printf("Total de lucro: %.2f EUR\n", lucroTotal);
-    }
     /*
      * -----------------------------------------------------------------------------
      * -------------------------------------------------------
@@ -236,43 +234,78 @@ public class FA_04 {
      * -----------------------------------------------------------------------------
      * -------------------------------------------------------
      */
+
+
     // função 5
-    public static void generosEJogosPorEditora(String[][] dados) {
-        Scanner input = new Scanner(System.in);
+public static void generosEJogosPorEditora(String[][] dados) {
+    Scanner input = new Scanner(System.in);
 
-        System.out.print("Insira o nome da editora: ");
-        String editora = input.nextLine();
-        boolean encontrouJogos = false;
+    listarEditoras(dados);
 
-        // create an array to keep track of printed game titles
-        String[] printedGames = new String[dados.length - 1];
-        int numPrintedGames = 0;
+    System.out.print("Insira o nome da editora: ");
+    String editora = input.nextLine();
+    boolean encontrouJogos = false;
 
-        for (int i = 1; i < dados.length; i++) {
-            if (dados[i][5].equals(editora)) {
-                String jogo = dados[i][7];
-                // check if game title has already been printed
-                boolean jaImpresso = false;
-                for (int j = 0; j < numPrintedGames; j++) {
-                    if (printedGames[j].equals(jogo)) {
-                        jaImpresso = true;
-                        break;
-                    }
-                }
-                if (!jaImpresso) {
-                    System.out.println("Género: " + dados[i][6]);
-                    System.out.println("Jogo: " + jogo);
-                    encontrouJogos = true;
-                    // add game title to printedGames array
-                    printedGames[numPrintedGames] = jogo;
-                    numPrintedGames++;
+    // create an array to keep track of printed game titles
+    String[] printedGames = new String[dados.length - 1];
+    int numPrintedGames = 0;
+
+    for (int i = 1; i < dados.length; i++) {
+        if (dados[i][5].equals(editora)) {
+            String jogo = dados[i][7];
+            // check if game title has already been printed
+            boolean jaImpresso = false;
+            for (int j = 0; j < numPrintedGames; j++) {
+                if (printedGames[j].equals(jogo)) {
+                    jaImpresso = true;
+                    break;
                 }
             }
-        }
-        if (!encontrouJogos) {
-            System.out.println("Não foram encontrados jogos para a editora " + editora);
+            if (!jaImpresso) {
+                System.out.println("Género: " + dados[i][6]);
+                System.out.println("Jogo: " + jogo);
+                encontrouJogos = true;
+                // add game title to printedGames array
+                printedGames[numPrintedGames] = jogo;
+                numPrintedGames++;
+            }
         }
     }
+    if (!encontrouJogos) {
+        System.out.println("Não foram encontrados jogos para a editora " + editora);
+    }
+}
+
+       /*
+     * -----------------------------------------------------------------------------
+     * -------------------------------------------------------
+     */
+// função auxiliar para mostrar as editoras disponíveis
+public static void listarEditoras(String[][] dados) {
+    // create an array to keep track of printed editoras
+    String[] printedEditoras = new String[dados.length - 1];
+    int numPrintedEditoras = 0;
+
+    System.out.println("Editoras disponíveis: ");
+
+    for (int i = 1; i < dados.length; i++) {
+        String editora = dados[i][5];
+        // check if editora has already been printed
+        boolean jaImpresso = false;
+        for (int j = 0; j < numPrintedEditoras; j++) {
+            if (printedEditoras[j].equals(editora)) {
+                jaImpresso = true;
+                break;
+            }
+        }
+        if (!jaImpresso) {
+            System.out.println("- " + editora);
+            // add editora to printedEditoras array
+            printedEditoras[numPrintedEditoras] = editora;
+            numPrintedEditoras++;
+        }
+    }
+}
 
     /*
      * -----------------------------------------------------------------------------
@@ -301,8 +334,7 @@ public class FA_04 {
         }
         // Imprime o resultado
         System.out.println(
-                "O jogo mais caro é " + jogoMaisCaro + " que custa " + precoMaximo
-                        + " EUR, comprado pelos seguintes clientes: " + clientesQueCompraram);
+                "O jogo mais caro é " + jogoMaisCaro + " que custa " + precoMaximo + " EUR, comprado pelos seguintes clientes: " + clientesQueCompraram);
     }
 
 }
