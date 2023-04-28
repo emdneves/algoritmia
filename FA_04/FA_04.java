@@ -30,7 +30,10 @@ V00-001;0001;Vitor Santos;910000001;vitor.santos@gmail.com;CD Projekt Red;RPG;Th
 V00-002;0001;Vitor Santos;910000001;vitor.santos@gmail.com;Team Cherry;Metroidvania;Hollow Knight;19.99
 V00-003;0002;Luis Camoes;910000002;lusiadas@gmail.com;Xbox Game Studios;Estrategia;Age of Empires IV;35.99
 
-Elabore um menu, que permita ao utilizador escolher o que pretende fazer, sendo que as opções terão de corresponder
+    /* --------------------------------------------------ENUNCIADO------------------------------------------------------------------------*/
+
+
+/* Elabore um menu, que permita ao utilizador escolher o que pretende fazer, sendo que as opções terão de corresponder
 ao número do exercício seguido da sua descrição. (Todos os exercícios devem abrir o ficheiro acima mencionado, e devem
 ser uma função própria (objeto de valorização)).
 1. Imprima o seu conteúdo na consola.
@@ -40,13 +43,34 @@ ser uma função própria (objeto de valorização)).
 5. Dada uma Editora, imprima todos géneros e os respetivos jogos.
 6. Imprima qual o jogo mais caro e os clientes que o compraram. */
 
-/* pseudocode
+/* 
 
-use a loop to check how many lines the ile contains
 
-read the values of the file and store them in an array or matrix
+    /* --------------------------------------------------PSEUDOCODE------------------------------------------------------------------------*/
 
- */
+/*   desta vez vou fazer  os comentários em português, apesar de o fazer para treino, entendo qe para o formador corrigir possa ser pior
+
+
+ - nas 6 alineas vamos sempre precisar de aceeder aos valores do ficheiro. Assim, para evitar termos um scanner para cada, opta-se por guardar à priori os valores do ficheiro numa matriz, excluindo-se o cabeçalho. 
+- isso é feito logo numa função lerDados, assim, caso o nome do ficheiro seja alterado, só temos que ir alterar o nome do ficheiro nos dois scanners
+- que eu saiba, não se conseguiria faazer só com um scanner, uma vez que ainda não demos listas e precisamos de saber o quantidade de linhas para criarmos a matriz e posteriormente, preenche-lo
+- assim, temos um scanner com um loop para descobrir o tamanho da matriz e um segundo pra o preencher (podiamos usar um array, mas teriamos que andar a fazer contas de 9 em 9 em todas as operações, o qe iria comprometer a legibilidade)
+- na função menu, temos um switch case com um try catch e um while para dar feedback ao tulizador caso insira uma opção inválida e volte a perguntar até este escolher a opção 7, sair
+    note-se que excepto as alineas 2 e 3, as otras funções nã dão um return mas um print. isso deve-se ao uso da função 2 na 3
+- na alinea 1, simplesmente imprimimos a matriz, e para a formatar, usamos um loop que descobre o tamanho do item que ocupa mais caracteres em cada matriz, depois ao imprimir é só formatar os espaços 
+- na função 2,
+- 
+
+
+
+
+*/ 
+
+
+
+
+
+ 
 
 import java.io.File;
 import java.io.IOException;
@@ -61,6 +85,11 @@ public class FA_04 {
         menu(dados);
     }
 
+/*  - nas 6 alineas vamos sempre precisar de aceeder aos valores do ficheiro. Assim, para evitar termos um scanner para cada, opta-se por guardar à priori os valores do ficheiro numa matriz, excluindo-se o cabeçalho. 
+    - isso é feito logo numa função lerDados, assim, caso o nome do ficheiro seja alterado, só temos que ir alterar o nome do ficheiro nos dois scanners 
+    - que eu saiba, não se conseguiria faazer só com um scanner, uma vez que ainda não demos listas e precisamos de saber o quantidade de linhas para criarmos a matriz e posteriormente, preenche-lo
+    - assim, temos um scanner com um loop para descobrir o tamanho da matriz e um segundo pra o preencher (podiamos usar um array, mas teriamos que andar a fazer contas de 9 em 9 em todas as operações, o qe iria comprometer a legibilidade)
+    */
     public static String[][] lerDados() {
         String[][] dados = null;
         try {
@@ -92,7 +121,8 @@ public class FA_04 {
     }
 
      /* função menu --------------------------------------------------------------------------------------------------------------------------*/
-
+/*  - na função menu, temos um switch case com um try catch e um while para dar feedback ao tulizador caso insira uma opção inválida e volte a perguntar até este escolher a opção 7, sair
+     note-se que excepto a alinea 2, as outras funções nã dão um return mas um print. isso deve-se ao uso da função 2 na 3 e termos que dar um return para poder reutilizar o valor */
     public static void menu(String[][] dados) {
         Scanner scanner = new Scanner(System.in);
         int opcao = 0;
@@ -131,8 +161,7 @@ public class FA_04 {
                     System.out.printf("O total de vendas foi %d e o valor total das vendas foi %.2f EUR\n", (int)vendasEValor[0], vendasEValor[1]);
                     break;
                 case 3:
-                    double lucro = totalDeLucro(dados);
-                    System.out.printf("O lucro das vendas foi de %.2f EUR\n", lucro);
+                    totalDeLucro(dados);                
                     break;
             
                 case 4:
@@ -155,6 +184,8 @@ public class FA_04 {
     }
 
     /* função 1--------------------------------------------------------------------------------------------------------------------------*/
+/*  - na alinea 1, simplesmente imprimimos a matriz, e para a formatar, usamos um loop que descobre o tamanho do item que ocupa mais caracteres em cada matriz, depois ao imprimir é só formatar os espaços 
+ */
 
     public static void imprimirDados(String[][] dados) {
         // Calculate the maximum width for each column
@@ -195,13 +226,12 @@ public static double[] vendasEValorTotal(String[][] dados) {
     return result;
 }
 
-    /* função 3--------------------------------------------------------------------------------------------------------------------------*/
-    public static double totalDeLucro(String[][] dados) {
+/* função 3 -------------------------------------------------------------------*/
+public static void totalDeLucro(String[][] dados) {
     double valorTotal = vendasEValorTotal(dados)[1];
     double lucro = valorTotal * 0.10;
-    return lucro;
+    System.out.printf("O total de lucro é %.2f EUR\n", lucro);
 }
-
 
     /* função 4--------------------------------------------------------------------------------------------------------------------------*/
 
