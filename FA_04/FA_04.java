@@ -251,21 +251,31 @@ public static void informacoesCliente(String[][] dados) {
 
     System.out.print("Insira o idCliente: ");
     String idCliente = input.nextLine();
+    String nome = " ";
+    String contacto = " ";
+    String email = " ";
     boolean encontrou = false;
-    // iterar sobre a matriz até descobrir o id cliente e imprimir os dados das
-    // colunas correspondentes
+
+    // iterar sobre a matriz até descobrir o id cliente e imprimir os dados 
     for (int i = 1; i < dados.length; i++) {
         if (dados[i][1].equals(idCliente)) {
-            System.out.println("Nome: " + dados[i][2]);
-            System.out.println("Contacto: " + dados[i][3]);
-            System.out.println("Email: " + dados[i][4]);
+            nome = dados[i][2];
+            contacto = dados[i][3];
+            email = dados[i][4];
             encontrou = true;
+            break; // para a procura logo que é encontrado o primeiro id correspondente, assim imprime so uma vez e não tem que correr a matriz toda
         }
     }
-    if (!encontrou) {
+
+    if (encontrou) {
+        System.out.println("Nome: " + nome);
+        System.out.println("Contacto: " + contacto);
+        System.out.println("Email: " + email);
+    } else {
         System.out.println("Não foram encontradas informações para o idCliente " + idCliente);
     }
 }
+
 
     /* -----------------------------------------------------------------------função 5--------------------------------------------------------------------------------------------------------------------------*/
 /*     - função 5,  usamos a mesma lógica da função auxiliar para remover os items duplicados, mas neste cas, os jogos, imprimindo-se os campos género e jogos de cada editor
@@ -280,7 +290,7 @@ public static void generosEJogosPorEditora(String[][] dados) {
     boolean encontrouJogos = false;
 
     // cria um array para acompanhar os jogos ja impressos
-    String[] jogosImpressos = new String[dados.length - 1];
+    String[] jogosImpressos = new String[dados.length];
     int numJogosImpressos = 0;
 
     for (int i = 1; i < dados.length; i++) {
