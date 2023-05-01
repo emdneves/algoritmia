@@ -343,13 +343,15 @@ public static void generosEJogosPorEditora(String[][] dados) {
     String editora = input.nextLine();
     boolean encontrouJogos = false;
 
-    // cria um array para acompanhar os jogos ja impressos
+    // cria um array para acompanhar os jogos já impressos
     String[] jogosImpressos = new String[dados.length];
     int numJogosImpressos = 0;
 
+    String ultimoGenero = "";
     for (int i = 1; i < dados.length; i++) {
         if (dados[i][5].equals(editora)) {
             String jogo = dados[i][7];
+            String genero = dados[i][6];
             // verifica se o jogo já foi impresso
             boolean jaImpresso = false;
             for (int j = 0; j < numJogosImpressos; j++) {
@@ -359,7 +361,10 @@ public static void generosEJogosPorEditora(String[][] dados) {
                 }
             }
             if (!jaImpresso) {
-                System.out.println("Género: " + dados[i][6]);
+                if (!genero.equals(ultimoGenero)) {
+                    System.out.println("Género: " + genero);
+                    ultimoGenero = genero;
+                }
                 System.out.println("Jogo: " + jogo);
                 encontrouJogos = true;
                 // adiciona o nome do jogo aos jogos já impressos
@@ -372,6 +377,7 @@ public static void generosEJogosPorEditora(String[][] dados) {
         System.out.println("Não foram encontrados jogos para a editora " + editora);
     }
 }
+
 
     /* -----------------------------------------------------------------------função auxiliar --------------------------------------------------------------------------------------------------------------------------*/
  /*     - função auxiliar, durante os testes ao programa, pareceu-me complicado testar várias editoras. Assim, para facilitar, antes de se inserir a editora pretendida, o programa disponibiliza uma lista de editoras disponíveis
