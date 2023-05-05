@@ -7,7 +7,6 @@ public class PL_09_09 {
 
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-        int quantidade = false;
         System.out.print("Insira o nome do produto: ");
         String nome = input.next();
         System.out.print("Insira o preço do produto: ");
@@ -53,4 +52,4 @@ public class PL_09_09 {
 
     }
 }
-}
+
