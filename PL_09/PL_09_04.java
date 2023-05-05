@@ -1,29 +1,26 @@
-/* 4. Escreva um programa onde cria uma classe chamada "Circulo" com um atributo raio. 
-Deve ser possível aceder e modificar esse atributo. Calcule a área e a circunferência do círculo.
- */
 import java.util.Scanner;
 
-public class Circulo {
-    private int raio;
 
-    public Circulo(int raio) {
-        this.raio = raio;
-    }
-
-    public double getAreaCirculo() {
-        double area = 3.14 * (raio * raio);
-        return area;
+public class PL_09_04 {
+    public PL_09_04() {
     }
 
     public static void main(String[] args) {
-        Scanner input = new Scanner(System.in); 
+        Scanner input = new Scanner(System.in);
+        Circulo circunferencia = new Circulo(0.0);
 
-        System.out.print("Introduza o raio: ");
-        int raio = input.nextInt();
+        String escolha;
+        do {
+            System.out.print("Introduza um raio: ");
+            double raio = input.nextDouble();
+            circunferencia.setRaio(raio);
+            System.out.println("Raio: " + circunferencia.getRaio());
+            System.out.println("Diametro: " + circunferencia.diametro());
+            System.out.println("Circunferencia/Perimetro: " + circunferencia.circunferencia());
+            System.out.println("Área: " + circunferencia.areaCirculo());
+            System.out.println("Deseja alterar o raio? (s/n):");
+            escolha = input.next();
+        } while(!escolha.equals("n"));
 
-        Circulo circulo1 = new Circulo(raio);
-        System.out.println("A área do círculo é: " + circulo1.getAreaCirculo());
-
-        input.close(); 
     }
 }

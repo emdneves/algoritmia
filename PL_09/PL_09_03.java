@@ -1,22 +1,27 @@
-/* 3. Escreva um programa onde cria uma classe chamada "Retângulo" com atributos de largura e altura. 
-Calcule a área e o perímetro do retângulo.
- */
-public class Rectangulo {
-    private int largura;
-    private int altura;
+import java.util.Scanner;
 
-    public Rectangulo(int largura, int altura) {
-        this.largura = largura;
-        this.altura = altura;
-    }
 
-    public int getArea() {
-        int area = largura * altura;
-        return area;
+public class PL_09_03 {
+
+
+    public PL_09_03() {
     }
 
     public static void main(String[] args) {
-        Rectangulo rectangulo1 = new Rectangulo(2, 3);
-        System.out.println("a área do rectangulo é: " + rectangulo1.getArea());
+        Scanner input = new Scanner(System.in);
+        Retangulo fixo = new Retangulo(10.5, 50.0);
+        System.out.print("Insira a largura:");
+        double largura = input.nextDouble();
+        System.out.print("Insira a altura:");
+        double altura = input.nextDouble();
+        Retangulo variavel = new Retangulo(largura, altura);
+        System.out.println("Perímetro: " + variavel.calcularPerimetro());
+        System.out.println("Área: " + variavel.calcularArea());
+        if (fixo.calcularArea() > variavel.calcularArea()) {
+            System.out.println("O retangulo fixo é maior");
+        } else {
+            System.out.println("O retangulo do utilizador é maior");
+        }
+
     }
 }

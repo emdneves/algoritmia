@@ -1,64 +1,56 @@
-/* 9. Crie uma classe Produto que tenha os atributos nome, preço e quantidade em stock, 
-e os métodos comprar e vender, que recebam a quantidade desejada como parâmetro e atualizem o stock. 
-No método main, crie um objeto dessa classe e chame os métodos para comprar 5 unidades e vender 2 unidades, e imprima a quantidade de stock.
- */
-
 import java.util.Scanner;
+import java.io.PrintStream;
 
-public class Produto {
-    private String nome;
-    private int preco;
-    private int stock;
-
-    public Produto(String nome, int preco, int stock) {
-        this.nome = nome;
-        this.preco = preco;
-        this.stock = stock;
-    }
-
-    public int getStock() {
-        return stock;
-    }
-
-    public int setVenda(int alteraStock) {
-        this.stock = stock - alteraStock;
-        return stock;
-    }
-
-    public int setCompra(int alteraStock) {
-        this.stock = stock + alteraStock;
-        return stock;
+public class PL_09_09 {
+    public PL_09_09() {
     }
 
     public static void main(String[] args) {
-        String nome = "bic";
-        int preco = 9;
-        int stock = 50;
-        Produto caneta = new Produto(nome, preco, stock);
-
-        System.out.println("Existem " + caneta.getStock() + " " + nome);
-
         Scanner input = new Scanner(System.in);
+        int quantidade = false;
+        System.out.print("Insira o nome do produto: ");
+        String nome = input.next();
+        System.out.print("Insira o preço do produto: ");
+        double preco = input.nextDouble();
+        Produto produto = new Produto(nome, preco);
 
-        System.out.print("Introduza a operação a ser feita: ");
-        String op = input.next();
+        int opcao;
+        do {
+            System.out.println("\nControlo do Produto: " + produto.getNome());
+            System.out.println("Preço: " + produto.getPreco());
 
-        System.out.print("Introduza a quantidade: ");
-        int alteraStock = input.nextInt();
+            do {
+                System.out.println("\n***** Menu *****");
+                System.out.println("\n1 - Comprar ");
+                System.out.println("2 - Vender");
+                System.out.println("3 - Consultar Stock");
+                System.out.println("4 - Sair");
+                System.out.print("\nEscolha uma opção: ");
+                opcao = input.nextInt();
+            } while(opcao < 1 || opcao > 4);
 
-        if (op.equals("compra")) {
-            caneta.setCompra(alteraStock);
-            System.out.println("\nDepois da compra: ");
-            System.out.println("Existem " + caneta.getStock() + " " + nome);
-        } else if (op.equals("venda")) {
-            if ((caneta.getStock() - alteraStock) > 0) {
-                caneta.setVenda(alteraStock);
-                System.out.println("\nDepois da venda: ");
-                System.out.println("Existem " + caneta.getStock() + " " + nome);
-            } else
-                System.out.println("\nNão existe quantidade suficiente em stock: ");
-        } else {
-            System.out.println("Erro, introduza compra ou venda");
-        }
+            int quantidade;
+            switch (opcao) {
+                case 1:
+                    System.out.println("\n***** Comprar *****");
+                    System.out.print("Quantas unidades quer comprar: ");
+                    quantidade = input.nextInt();
+                    produto.comprar(quantidade);
+                    break;
+                case 2:
+                    System.out.println("\n***** Vender *****");
+                    System.out.print("Quantas unidades quer vender: ");
+                    quantidade = input.nextInt();
+                    produto.vender(quantidade);
+                    break;
+                case 3:
+                    System.out.println("\nTem " + produto.getStock() + " unidades em stock!\n");
+                    break;
+                case 4:
+                    System.out.println("Até à próxima");
+            }
+        } while(opcao != 4);
+
     }
+}
 }
