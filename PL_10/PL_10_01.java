@@ -1,34 +1,38 @@
-//1. Atualize a classe Carro, para além de marca, modelo e ano, deve ter os seguintes parâmetros: potência,
-//        cilindrada, tipoCombustivel, litros100Km.
-//        a. Tipo Combustível deve ser uma enumeração: GASOLINA, DIESEL, GPL.
-//        b. Altere o método ligar para que imprima uma mensagem de acordo com as seguintes
-//        especificações:
-//        c. Crie um método chamado corrida que receba um adversário como parâmetro e retorne o carro vencedor.
-//        O vencedor é o carro com mais potência (caso seja a mesma o fator de desempate é a cilindrada (o maior ganha), caso contrário o fator de desempate é a idade (o mais recente ganha), caso contrário temos empate).
-//        d. Crie um método que receba como parâmetro uma distância (em km), e que calcule o valor consumido em litros do combustível.
-//        e. Teste a classe instanciando dois carros ao seu gosto e faça uma corrida entre os dois, imprima o vencedor. Seguidamente, calcule quanto é que os dois carros iam gastar numa viagem de 97km.
-//        E imprima na consola quanto gastaria cada um, e qual dos dois é que ia gastar mais.
+//
+// Source code recreated from a .class file by IntelliJ IDEA
+// (powered by FernFlower decompiler)
+//
 
-package PL_10;
+import java.util.Scanner;
 
 public class PL_10_01 {
-
-    public void ligar() {
-
+    public PL_10_01() {
     }
 
     public static void main(String[] args) {
-        Carro carroDoTassio = new Carro("renault", "super 5", 1985, 50, 1000,"GASOLINA", 8.5 );
-        Carro carroDoMendes = new Carro("ford", "fiesta turbo", 1990, 75, 1400,"DIESEL", 6.5 );
-
-        
-
+        new Scanner(System.in);
+        Car fullCar = new Car("Mercedes", "4x4", 1970, 1500.0, 200.0, 12.0, TipoCombustivel.DIESEL);
+        Car fullCar2 = new Car("BMW", "salsicha", 2023, 2500.0, 300.0, 7.0, TipoCombustivel.GASOLINA);
+        fullCar.exibirDetalhes();
+        fullCar2.exibirDetalhes();
+        System.out.println("");
+        System.out.println("-----------------------------------------------------------");
+        fullCar.turnOn();
+        fullCar2.turnOn();
+        System.out.println("");
+        System.out.println("-----------------------------------------------------------");
+        fullCar.litrosGastos(200.0);
+        fullCar2.litrosGastos(6.0);
+        System.out.println("");
+        System.out.println("-----------------------------------------------------------");
+        Car vencedor = fullCar2.corrida(fullCar);
+        System.out.println("O vencedor da corrida é: " + vencedor.getBrand() + " " + vencedor.getModel());
+        fullCar.corrida(fullCar2);
+        System.out.println("O vencedor da corrida é: " + vencedor.getBrand() + " " + vencedor.getModel());
+        System.out.println("");
+        System.out.println("-----------------------------------------------------------");
+        double distancia = 97.0;
+        fullCar.litrosGastos(distancia);
+        fullCar2.litrosGastos(distancia);
     }
-
-
-
-
-
-
-
-
+}

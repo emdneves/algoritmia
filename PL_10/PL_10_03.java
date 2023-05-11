@@ -1,11 +1,24 @@
-//3. Crie uma classe animal, que tenha como atributos: nome, espécie, país de origem, espécie, peso (em kg) e alimentação (array de Strings).
-//        a. Crie um método para o animal comer, receba como parâmetro o alimento e o peso (em g).
-//        Se o alimento constar na lista de alimentos que o animal come, incremente o seu peso com o peso da refeição e imprima na consola “O animal comeu”.
-//        Caso contrário, não deve atualizar e imprimir na consola “O animal recusou essa comida”.
-//        b. Teste a classe instanciando um animal e apresentado uma refeição que ele goste, seguidamente imprima o seu novo peso.
-//        A seguir, apresente uma refeição que ele não goste e imprima o seu peso.
+//
+// Source code recreated from a .class file by IntelliJ IDEA
+// (powered by FernFlower decompiler)
+//
 
-package PL_10;
+import java.util.ArrayList;
 
 public class PL_10_03 {
+    public PL_10_03() {
+    }
+
+    public static void main(String[] args) {
+        ArrayList<String> alimentacao = new ArrayList();
+        alimentacao.add("Couves");
+        alimentacao.add("Ração");
+        alimentacao.add("Bife");
+        Animal animal1 = new Animal("Flecha", "Cão", "Rio de Janeiro", 30.0, alimentacao);
+        Animal animal2 = new Animal("Thor", "Cão", "Portugal", 50.0, alimentacao);
+        animal1.comer("Bife", 300.0);
+        animal2.comer("Arroz", 250.0);
+        System.out.println("Peso animal 1: " + animal1.getPeso());
+        System.out.println("Peso animal 2: " + animal2.getPeso());
+    }
 }

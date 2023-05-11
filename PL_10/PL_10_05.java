@@ -1,8 +1,20 @@
-//5. Crie uma classe chamada "Pessoa" que armazena informações básicas sobre uma pessoa, como nome, idade, email e telemóvel.
-//        De seguida, crie uma classe chamada "Agenda" que armazena um conjunto de objetos Pessoa num array.
-//        A classe Agenda terá um método para adicionar novas pessoas e outro para listar todas as pessoas registadas.
-
-package PL_10;
+//
+// Source code recreated from a .class file by IntelliJ IDEA
+// (powered by FernFlower decompiler)
+//
 
 public class PL_10_05 {
+    public PL_10_05() {
+    }
+
+    public static void main(String[] args) {
+        Agenda agenda = new Agenda();
+        Pessoa pessoa1 = new Pessoa("João", "joao@gmail.com", "123456789", 25);
+        Pessoa pessoa2 = new Pessoa("Maria", "maria@gmail.com", "987654321", 30);
+        Pessoa pessoa3 = new Pessoa("Pedro", "pedro@gmail.com", "55555555", 20);
+        agenda.adicionarPessoa(pessoa1);
+        agenda.adicionarPessoa(pessoa2);
+        agenda.adicionarPessoa(pessoa3);
+        agenda.listarPessoas();
+    }
 }

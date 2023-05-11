@@ -1,13 +1,51 @@
-//2. Atualize a classe Conta: para além dos atributos número da conta, saldo e titular da conta, deve também ter ano de abertura, margem de empréstimo e valor em divida.
-//        a. O método de construtor não muda.
-//        b. O ano de criação da conta deve ser 2023.
-//        c. A margem de empréstimo deve ser 90% do saldo (ex: se a conta tem 1000€, a conta pode fazer um empréstimo até 900€). Sempre que o saldo alterar, também esta margem deve mudar.
-//        d. Crie o método pedirEmprestimo, deve receber como parâmetro o valor a pedir. Seguidamente, avalie se a conta pode pedir um empréstimo com esse valor.
-//        Se houver qualquer valor em dívida, o pedido deve ser automaticamente desconsiderado (só pode ter um empréstimo de cada vez).
-//        Caso seja possível, atualize o saldo e valor em dívida com o dinheiro pedido e retorne true.
-//        Caso não seja possível, não atualize saldo nem valor em dívida e retorne false.
-
-package PL_10;
+//
+// Source code recreated from a .class file by IntelliJ IDEA
+// (powered by FernFlower decompiler)
+//
 
 public class PL_10_02 {
+    public PL_10_02() {
+    }
+
+    public static void main(String[] args) {
+        Conta conta1 = new Conta("111222", "Cristiano Ronaldo", 2000.0);
+        System.out.println("Margem de Empréstimo C1: " + conta1.getMargemEmprestimo());
+        Conta conta2 = new Conta("222333", "Conor Mcgregor", 3000.0);
+        System.out.println("Margem de Empréstimo C2: " + conta2.getMargemEmprestimo());
+        System.out.println("Teste método transferência");
+        conta1.transferencia(-10.0, conta2);
+        System.out.println("Margem de Empréstimo C1: " + conta1.getMargemEmprestimo());
+        System.out.println("Margem de Empréstimo C2: " + conta2.getMargemEmprestimo());
+        conta2.transferencia(200.0, conta1);
+        System.out.println("Margem de Empréstimo C1: " + conta1.getMargemEmprestimo());
+        System.out.println("Margem de Empréstimo C2: " + conta2.getMargemEmprestimo());
+        System.out.println("O saldo da conta 1 é: " + conta1.getSaldo() + " e o saldo da conta 2 é : " + conta2.getSaldo());
+        System.out.println("");
+        System.out.println("-----------------------------------------------------------");
+        System.out.println();
+        conta1.depositar(-10.0);
+        conta2.depositar(2000.0);
+        System.out.println("Saldo da Conta " + conta1.getNumeroConta() + ": " + conta1.getSaldo());
+        System.out.println("Margem de Empréstimo C1: " + conta1.getMargemEmprestimo());
+        System.out.println("Saldo da Conta " + conta2.getNumeroConta() + ": " + conta2.getSaldo());
+        System.out.println("Margem de Empréstimo C2: " + conta2.getMargemEmprestimo());
+        System.out.println("");
+        System.out.println("-----------------------------------------------------------");
+        System.out.println();
+        conta1.levantar(-10.0);
+        conta1.mostrarSaldo();
+        System.out.println("Margem de Empréstimo C1: " + conta1.getMargemEmprestimo());
+        conta2.levantar(700.0);
+        conta2.mostrarSaldo();
+        System.out.println("Margem de Empréstimo C2: " + conta2.getMargemEmprestimo());
+        System.out.println("");
+        System.out.println("-----------------------------------------------------------");
+        System.out.println();
+        conta1.mostrarMargemEmprestimo();
+        conta1.pedirEmprestimo(100.0);
+        conta1.mostrarSaldo();
+        conta2.mostrarMargemEmprestimo();
+        conta2.pedirEmprestimo(2926.0);
+        conta2.mostrarSaldo();
+    }
 }
