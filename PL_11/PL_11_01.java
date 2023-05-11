@@ -44,7 +44,6 @@ class Bicycle {
         this.price = price;
     }
 
-
 /* -----------------------------------------BICYCLE GETTERS ----------------------------------------- */    
 
 public int getId() {
@@ -124,6 +123,33 @@ class MountainBike extends Bicycle {
     }
 
 
+/* -----------------------------------------MOUNTAIN BIKE GETTERS ----------------------------------------- */    
+
+public int numberOfLights() {
+    return numberOfLights;
+}
+
+public String suspension() {
+    return suspension;
+}
+
+public List<String> bikeTools() {
+    return bikeTools;
+}
+
+/* -----------------------------------------MOUNTAIN BIKE SETTERS----------------------------------------- */    
+
+public void setNumberOfLights(int numberOfLights) {
+    this.numberOfLights = numberOfLights;
+}
+
+public void setSuspension(String suspension) {
+    this.suspension = suspension;
+}
+
+public void setikeTools(List<String> bikeTools) {
+    this.bikeTools = bikeTools;
+}
 }
 
 
@@ -146,33 +172,33 @@ class CargoBike extends Bicycle {
 
 /* -----------------------------------------CARGO BIKE GETTERS ----------------------------------------- */    
 
-/* public int isFrontBasket() {
+public boolean isFrontBasket() {
     return isFrontBasket;
 }
 
-public int basketCapacity() {
+public double basketCapacity() {
     return basketCapacity;
 }
 
-public String sponsors() {
+public List<String> sponsors() {
     return sponsors;
-} */
+}
 
 
 /* -----------------------------------------CARGO BIKE SETTERS----------------------------------------- */    
 
-/* public void setId(int isFrontBasket) {
+public void setId(boolean isFrontBasket) {
     this.isFrontBasket = isFrontBasket;
 }
 
-public void setbBasketCapacity(int basketCapacity) {
+public void setbBasketCapacity(double basketCapacity) {
     this.basketCapacity = basketCapacity;
 }
 
-public void setSponsors(String sponsors) {
+public void setSponsors(List<String> sponsors) {
     this.sponsors = sponsors;
 }
-} */
+}
 
 
 
