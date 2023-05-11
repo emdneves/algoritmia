@@ -12,13 +12,41 @@ a. Crie ainda um método na classe BicycleManagment que imprima todos os dados d
 
 package PL_11;
 
-public class PL_11_01 {
+class PL_11_01 
+{
 
+    public static void main(String[] args) 
+    {
 
-
-
-
-
-
+    }
 
 }
+
+class Bycicle
+{
+    private int id;
+    private int numOfGears;
+    private float wheelSize;
+    private int bikeLength;
+    private boolean adjustableSeatPost;
+    private float price;
+}
+
+class DeliveryBike
+{
+    private float id;
+    private boolean numOfGears;
+    private final int SPONSOR_SIZE = 10;
+    Sponsor[] sponsors;
+    private int numOfSponsor;    
+}
+
+class MountainBike
+{
+private int numberOfLights;
+private MountainBikeSuspension suspension;
+BikeTools[] bikeTools;
+}
+
+this.atualizarMargemEmprestimo();
+
