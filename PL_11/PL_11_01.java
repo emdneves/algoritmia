@@ -12,15 +12,11 @@ a. Crie ainda um método na classe BicycleManagment que imprima todos os dados d
 
 package PL_11;
 
-class PL_11_01 
-{
-
-
-
 import java.util.ArrayList;
 import java.util.List;
 
-
+class PL_11_01 
+{
 
 /* -----------------------------------------BICYCLE CLASS----------------------------------------- */    
 
@@ -113,15 +109,12 @@ class MountainBike extends Bicycle {
     private String suspension;
     private List<String> bikeTools;
 
-    public MountainBike(int id, int numberOfGears, String mainColor, double wheelSize, double bikeLength,
-                        boolean adjustableSeatpost, double price, int numberOfLights, String suspension,
-                        List<String> bikeTools) {
+    public MountainBike(int id, int numberOfGears, String mainColor, double wheelSize, double bikeLength, boolean adjustableSeatpost, double price, int numberOfLights, String suspension, List<String> bikeTools) {
         super(id, numberOfGears, mainColor, wheelSize, bikeLength, adjustableSeatpost, price);
         this.numberOfLights = numberOfLights;
         this.suspension = suspension;
         this.bikeTools = bikeTools;
     }
-
 
 /* -----------------------------------------MOUNTAIN BIKE GETTERS ----------------------------------------- */    
 
@@ -147,11 +140,10 @@ public void setSuspension(String suspension) {
     this.suspension = suspension;
 }
 
-public void setikeTools(List<String> bikeTools) {
+public void setBikeTools(List<String> bikeTools) {
     this.bikeTools = bikeTools;
 }
 }
-
 
 /* -----------------------------------------CLASS CARGO BIKE----------------------------------------- */    
 
@@ -160,15 +152,12 @@ class CargoBike extends Bicycle {
     private double basketCapacity;
     private List<String> sponsors;
 
-    public CargoBike(int id, int numberOfGears, String mainColor, double wheelSize, double bikeLength,
-                     boolean adjustableSeatpost, double price, boolean isFrontBasket, double basketCapacity,
-                     List<String> sponsors) {
+    public CargoBike(int id, int numberOfGears, String mainColor, double wheelSize, double bikeLength, boolean adjustableSeatpost, double price, boolean isFrontBasket, double basketCapacity, List<String> sponsors) {
         super(id, numberOfGears, mainColor, wheelSize, bikeLength, adjustableSeatpost, price);
         this.isFrontBasket = isFrontBasket;
         this.basketCapacity = basketCapacity;
         this.sponsors = sponsors;
     }
-
 
 /* -----------------------------------------CARGO BIKE GETTERS ----------------------------------------- */    
 
@@ -184,14 +173,13 @@ public List<String> sponsors() {
     return sponsors;
 }
 
-
 /* -----------------------------------------CARGO BIKE SETTERS----------------------------------------- */    
 
 public void setId(boolean isFrontBasket) {
     this.isFrontBasket = isFrontBasket;
 }
 
-public void setbBasketCapacity(double basketCapacity) {
+public void setBasketCapacity(double basketCapacity) {
     this.basketCapacity = basketCapacity;
 }
 
@@ -200,31 +188,22 @@ public void setSponsors(List<String> sponsors) {
 }
 }
 
-
-
 /* -----------------------------------------MAIN----------------------------------------- */    
 
 public static void main(String[] args) {
-    // Create a list to store the available bicycles
     List<Bicycle> bicycles = new ArrayList<>();
 
-    // Create a mountain bike
-    MountainBike mountainBike = new MountainBike(1, 24, "Red", 26, 180, true, 500.0,
-            2, "Dual Suspension", new ArrayList<>());
-    mountainBike.addBikeTool("Water Bottle");
-    mountainBike.addBikeTool("Tire Repair Kit");
+    MountainBike mountainBike = new MountainBike(1, 24, "Red", 26, 180, true, 500.0, 2, "Dual Suspension", "agua");
+    mountainBike.addBikeTool("agua");
+    mountainBike.addBikeTool("pneu extra");
 
-    // Create a cargo bike
-    CargoBike cargoBike = new CargoBike(2, 8, "Blue", 28, 200, false, 800.0,
-            true, 50.0, new ArrayList<>());
-    cargoBike.getSponsors().add("Company A");
-    cargoBike.getSponsors().add("Company B");
+    CargoBike cargoBike = new CargoBike(2, 8, "Blue", 28, 200, false, 800.0, true, 50.0, "LIDL");
+    cargoBike.getSponsors().add("super bock");
+    cargoBike.getSponsors().add("aguardente crf");
 
-    // Add the bikes to the list
     bicycles.add(mountainBike);
     bicycles.add(cargoBike);
 
-    // Display information about each bike
     for (Bicycle bike : bicycles) {
         System.out.println("Bike ID: " + bike.getId());
         System.out.println("Number of Gears: " + bike.getNumberOfGears());
