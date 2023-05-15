@@ -2,139 +2,71 @@ package PL_03;
 
 import java.util.Scanner;
 
-public class Veiculo {
+    public class Veiculo {
+        private String marca, modelo;
+        private int anoFabrico, potencia;
+        private double cilindrada, consumo;
 
-    // Atributos de instância
-    private String marca;
-    private String modelo;
-    private int anoFabrico,potencia,cilindrada;
-    private double consumoL100;
-    private TipoCombustivel combustivel;
-    private int idade;
-
-    // Método construtor
-    public Veiculo(String marca, String modelo, int anoFabrico, int potencia, int cilindrada, TipoCombustivel combustivel, double consumoL100) {
-        this.marca = marca;
-        this.modelo = modelo;
-        this.anoFabrico = anoFabrico;
-        this.potencia = potencia;
-        this.cilindrada = cilindrada;
-        this.consumoL100 = consumoL100;
-        this.combustivel = combustivel;
-    }
-
-
-    /**
-     * Método para calcular a idade em 2023
-     * @return Idade em 2023
-     */
-    public int getIdade(){
-        return 2023-anoFabrico;
-    }
-
-    /**
-     * Método que imprime na consola que o carro está ligado
-     */
-    public void ligar(){
-
-        if(this.idade>30){ // Carro tem mais de 30 anos
-            if(combustivel.equals(TipoCombustivel.DIESEL)){
-                System.out.println("Deita um pouco de fumo... Custa a pegar... O carro está ligado!");
-                System.out.println("Vrum-vrum-vrum");
-            }else{
-                System.out.println("Custa a pegar... O carro está ligado!");
-            }
-
-        }else{ // Carro tem 30 ou menos anos
-            if(this.potencia>=250){ // Carro tem 250 ou mais cavalos
-                System.out.println("VRUUMMMMMM");
-            }else{
-                System.out.println("Vruummmmmmm");
-            }
-
+        public Veiculo(String marca, String modelo, int anoFabrico, int potencia, double cilindrada, double consumo) {
+            this.marca = marca;
+            this.modelo = modelo;
+            this.anoFabrico = anoFabrico;
+            this.potencia = potencia;
+            this.cilindrada = cilindrada;
+            this.consumo = consumo;
         }
-    }
 
-    /**
-     * Método para introduzir um carro com base nos valores introduzidos pelo utilizador
-     * @return Carro preenchido
-     */
-    public static Veiculo introduzirVeiculo(){
-        Scanner input = new Scanner(System.in);
+        public String getMarca() {
+            return marca;
+        }
 
-        System.out.println("\n***** Novo Carro  *****");
-        System.out.print("Insira a Marca: ");
-        String marca = input.next();
+        public String getModelo() {
+            return modelo;
+        }
 
-        System.out.print("Insira o Modelo: ");
-        String modelo = input.next();
+        public int getAnoFabrico() {
+            return anoFabrico;
+        }
 
-        System.out.print("Insira o Ano de Fabrico: ");
-        int ano = input.nextInt();
+        public int getPotencia() {
+            return potencia;
+        }
 
-        System.out.print("Insira a Potência: ");
-        int potencia = input.nextInt();
+        public double getCilindrada() {
+            return cilindrada;
+        }
 
-        System.out.print("Insira a Cilindrada: ");
-        int cilindrada = input.nextInt();
+        public double getConsumo() {
+            return consumo;
+        }
 
-        System.out.print("Insira o tipo de combustível do carro (GASOLINA, DIESEL ou GPL): ");
-        TipoCombustivel tipoCombustivel = TipoCombustivel.valueOf(input.next().toUpperCase());
 
-        System.out.print("Insira o Consumo: ");
-        double consumoL100 = input.nextDouble();
+        public void ligar(){
+            System.out.println("O carro está ligado");
+        }
+        public Veiculo corrida(Veiculo adversario){
 
-        Veiculo veiculoUtilizador = new Veiculo(marca,modelo,ano,potencia,cilindrada,tipoCombustivel, consumoL100);
-        return veiculoUtilizador;
-    }
-
-    /**
-     * Método para imprimir todos os detalhes de um carro
-     */
-    public void exibirDetalhes(){
-        System.out.println("Marca: "+this.marca);
-        System.out.println("Modelo: "+this.modelo);
-        System.out.println("Ano Fabrico: "+this.anoFabrico);
-        System.out.println("Potência: "+this.potencia+" HP");
-        System.out.println("Cilindrada: "+this.marca+" cc");
-        System.out.println("Tipo de Combustível: "+this.combustivel);
-        System.out.println("Consumo (L/100): "+this.consumoL100);
-    }
-
-    /**
-     * Método para fazer uma corrida com 2 carros
-     * @param adversario Oponente na corrida
-     * @return Carro vencedor
-     */
-    public Veiculo corrida(Veiculo adversario){
-        if(this.potencia>adversario.potencia){ //Ganha o Carro por potencia
-            return this;
-        } else if (adversario.potencia>this.potencia) { // Ganha o adversário por potencia
-            return adversario;
-        } else { // Empate de potencia
-            if(this.cilindrada>adversario.cilindrada){ //Ganha o Carro por cilindrada
+            if(this.potencia>adversario.potencia){ // Ganha o Carro por potencia
                 return this;
-            } else if (adversario.cilindrada>this.cilindrada) { // Ganha o adversario por cilindrada
+            } else if (this.potencia<adversario.potencia) { // Ganha o adversário por potencia
                 return adversario;
-            } else { // Empate de cilindrada
-                if(this.anoFabrico>adversario.anoFabrico){ // Ganha o carro por ser mais recente
+            }else{ // Empate de potência
+                if(this.cilindrada>adversario.cilindrada){ // Ganha o Carro por cilindrada
                     return this;
-                } else if (adversario.anoFabrico>this.anoFabrico) { // Ganha o adversario por ser mais recente
+                } else if (this.cilindrada<adversario.cilindrada) { // Ganha o adversário por cilindrada
                     return adversario;
+                }else{ // Empate de cilindrada
+                    if(this.anoFabrico>adversario.anoFabrico){ // Ganha o Carro por recente
+                        return this;
+                    } else if (this.anoFabrico<adversario.anoFabrico) { // Ganha o adversário por recente
+                        return adversario;
+                    }
                 }
             }
+            return null;
         }
 
-        return null;
+        public double consumo(int km){
+            return km*consumo/100;
+        }
     }
-
-    /**
-     * Método que calcula o consumo em Litros de um carro ao longo de uma distância
-     * @param distancia - Em km da viagem
-     * @return litros consumidos na viagem
-     */
-    public double calcularConsumo(double distancia){
-        return distancia*(this.consumoL100/100);
-    }
-
-}
