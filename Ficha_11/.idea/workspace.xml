@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="bc52c31b-845d-43e6-b7b3-ce69ca6abd5a" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/poo_fp11_02/.idea/dictionaries/sdev0223.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../out/production/algoritmia/Ficha_01/Ficha_01.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../out/production/algoritmia/Ficha_02/Ficha_02.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../out/production/algoritmia/Ficha_03/Ficha_03.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../out/production/algoritmia/Ficha_04/Ficha_04.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../out/production/algoritmia/Ficha_05/Ficha_05.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../out/production/algoritmia/Ficha_06/Ficha_06.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../out/production/algoritmia/Ficha_07/Ficha_07.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../out/production/algoritmia/Ficha_08/Ficha_08.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../out/production/algoritmia/JogoGalo/JogoGalo.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../out/production/algoritmia/algoritmia.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ficha_09/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ficha_09/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ficha_09/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ficha_09/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ficha_09/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ficha_09/Ficha_09.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ficha_09/out/production/Ficha_09/Aluno.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ficha_09/out/production/Ficha_09/Calculadora.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ficha_09/out/production/Ficha_09/Cao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ficha_09/out/production/Ficha_09/Carro.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ficha_09/out/production/Ficha_09/Circulo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ficha_09/out/production/Ficha_09/Conta.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ficha_09/out/production/Ficha_09/Ex_01.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ficha_09/out/production/Ficha_09/Ex_02.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ficha_09/out/production/Ficha_09/Ex_03.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ficha_09/out/production/Ficha_09/Ex_04.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ficha_09/out/production/Ficha_09/Ex_05.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ficha_09/out/production/Ficha_09/Ex_06.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ficha_09/out/production/Ficha_09/Ex_07.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ficha_09/out/production/Ficha_09/Ex_08.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ficha_09/out/production/Ficha_09/Ex_09.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ficha_09/out/production/Ficha_09/Ex_10.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ficha_09/out/production/Ficha_09/Ex_11.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ficha_09/out/production/Ficha_09/Funcionario.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ficha_09/out/production/Ficha_09/Livro.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ficha_09/out/production/Ficha_09/Pessoa.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ficha_09/out/production/Ficha_09/Produto.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ficha_09/out/production/Ficha_09/Retangulo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ficha_09/src/Aluno.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ficha_09/src/Calculadora.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ficha_09/src/Cao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ficha_09/src/Carro.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ficha_09/src/Circulo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ficha_09/src/Conta.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ficha_09/src/Ex_01.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ficha_09/src/Ex_02.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ficha_09/src/Ex_03.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ficha_09/src/Ex_04.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ficha_09/src/Ex_05.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ficha_09/src/Ex_06.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ficha_09/src/Ex_07.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ficha_09/src/Ex_08.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ficha_09/src/Ex_09.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ficha_09/src/Ex_10.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ficha_09/src/Ex_11.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ficha_09/src/Funcionario.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ficha_09/src/Livro.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ficha_09/src/Pessoa.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ficha_09/src/Produto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ficha_09/src/Retangulo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ficha_10/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ficha_10/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ficha_10/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ficha_10/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ficha_10/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ficha_10/Ficha_10.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ficha_10/index-files/index-1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ficha_10/index-files/index-10.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ficha_10/index-files/index-11.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ficha_10/index-files/index-12.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ficha_10/index-files/index-13.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ficha_10/index-files/index-2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ficha_10/index-files/index-3.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ficha_10/index-files/index-4.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ficha_10/index-files/index-5.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ficha_10/index-files/index-6.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ficha_10/index-files/index-7.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ficha_10/index-files/index-8.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ficha_10/index-files/index-9.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ficha_10/legal/ADDITIONAL_LICENSE_INFO" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ficha_10/legal/ASSEMBLY_EXCEPTION" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ficha_10/legal/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ficha_10/legal/jquery.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ficha_10/legal/jqueryUI.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ficha_10/out/production/Ficha_10/Animal.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ficha_10/out/production/Ficha_10/Carro.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ficha_10/out/production/Ficha_10/Conta.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ficha_10/out/production/Ficha_10/Ex_01.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ficha_10/out/production/Ficha_10/Ex_02.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ficha_10/out/production/Ficha_10/TipoCombustivel.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ficha_10/resources/glass.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ficha_10/resources/x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ficha_10/script-dir/jquery-3.6.0.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ficha_10/script-dir/jquery-ui.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ficha_10/script-dir/jquery-ui.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ficha_10/src/Animal.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ficha_10/src/Carro.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ficha_10/src/Conta.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ficha_10/src/Ex_01.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ficha_10/src/Ex_02.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ficha_10/src/TipoCombustivel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ficha_11.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Javadoc/Bicycle.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Javadoc/BicycleManagement.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Javadoc/BikeDemo.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Javadoc/BikeTools.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Javadoc/DeliveryBike.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Javadoc/MountainBike.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Javadoc/MountainBikeSuspension.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Javadoc/Sponsors.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Javadoc/allclasses-index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Javadoc/allpackages-index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Javadoc/copy.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Javadoc/element-list" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Javadoc/help-doc.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Javadoc/index-files/index-1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Javadoc/index-files/index-10.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Javadoc/index-files/index-11.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Javadoc/index-files/index-12.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Javadoc/index-files/index-13.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Javadoc/index-files/index-14.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Javadoc/index-files/index-15.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Javadoc/index-files/index-2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Javadoc/index-files/index-3.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Javadoc/index-files/index-4.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Javadoc/index-files/index-5.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Javadoc/index-files/index-6.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Javadoc/index-files/index-7.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Javadoc/index-files/index-8.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Javadoc/index-files/index-9.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Javadoc/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Javadoc/jquery-ui.overrides.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Javadoc/legal/ADDITIONAL_LICENSE_INFO" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Javadoc/legal/ASSEMBLY_EXCEPTION" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Javadoc/legal/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Javadoc/legal/jquery.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Javadoc/legal/jqueryUI.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Javadoc/member-search-index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Javadoc/module-search-index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Javadoc/overview-tree.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Javadoc/package-search-index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Javadoc/package-summary.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Javadoc/package-tree.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Javadoc/poo_fp11/BikeStore/Bicycle.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Javadoc/poo_fp11/BikeStore/BicycleManagement.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Javadoc/poo_fp11/BikeStore/BikeDemo.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Javadoc/poo_fp11/BikeStore/BikeTools.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Javadoc/poo_fp11/BikeStore/DeliveryBike.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Javadoc/poo_fp11/BikeStore/MountainBike.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Javadoc/poo_fp11/BikeStore/MountainBikeSuspension.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Javadoc/poo_fp11/BikeStore/Sponsors.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Javadoc/poo_fp11/BikeStore/package-summary.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Javadoc/poo_fp11/BikeStore/package-tree.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Javadoc/resources/glass.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Javadoc/resources/x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Javadoc/script-dir/jquery-3.6.0.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Javadoc/script-dir/jquery-ui.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Javadoc/script-dir/jquery-ui.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Javadoc/script.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Javadoc/search-page.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Javadoc/search.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Javadoc/search.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Javadoc/stylesheet.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Javadoc/tag-search-index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Javadoc/type-search-index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Ficha_11/Bicycle.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Ficha_11/BicycleManagement.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Ficha_11/BikeDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Ficha_11/BikeTools.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Ficha_11/DeliveryBike.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Ficha_11/MountainBike.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Ficha_11/MountainBikeSuspension.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Ficha_11/Sponsors.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/poo_fp11/poo_fp11_02/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/poo_fp11/poo_fp11_02/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/poo_fp11/poo_fp11_02/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/poo_fp11/poo_fp11_02/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poo_fp11/poo_fp11_02/Animal.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/poo_fp11/poo_fp11_02/Cao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/poo_fp11/poo_fp11_02/Farm.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/poo_fp11/poo_fp11_02/Galinha.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/poo_fp11/poo_fp11_02/Gato.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/poo_fp11/poo_fp11_02/Porco.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/poo_fp11/poo_fp11_02/Vaca.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/poo_fp11/poo_fp11_02/poo_fp11_02.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/poo_fp11/poo_fp11_02/poo_fp11_02.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/poo_fp11_02/poo_fp11_02.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/poo_fp11_02/src/poo_fp11_02.java" beforeDir="false" afterPath="$PROJECT_DIR$/poo_fp11_02/src/poo_fp11_02.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/poo_fp11/BikeStore/Bicycle.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/poo_fp11/BikeStore/BicycleManagement.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/poo_fp11/BikeStore/BikeDemo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/poo_fp11/BikeStore/BikeTools.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/poo_fp11/BikeStore/DeliveryBike.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/poo_fp11/BikeStore/MountainBike.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/poo_fp11/BikeStore/MountainBikeSuspension.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/poo_fp11/BikeStore/Sponsors.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="2PpPcyPY43ZMVNGcRkYIgy5oGjK" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/sdev0223/Documents/GitHub/algoritmia/Ficha_11",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="bc52c31b-845d-43e6-b7b3-ce69ca6abd5a" name="Changes" comment="" />
+      <created>1684151132987</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1684151132987</updated>
+      <workItem from="1684151134064" duration="65000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
