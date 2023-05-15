@@ -7,7 +7,6 @@ public class veiculosMain {
         Carro carro2 = new Carro("BMW", "116i", 2022, 80, 1.6, 6.6, Combustivel.GASOLINA);
 
         Mota mota = new Mota("Honda", "Africa Twin", 2020, 75, 1100, 4.9);
-        mota.imagem();
         Camiao camiao = new Camiao("Volvo", "FH16", 2019, 750, 16, 21.5, 500);
 
         Carro vencedor = (Carro) carro1.corrida(carro2);
@@ -30,6 +29,8 @@ public class veiculosMain {
         camiao.viagem(600, 500);
         System.out.println();
         camiao.viagem(400, 700);
+
+        mota.imagem();
 
 
     }

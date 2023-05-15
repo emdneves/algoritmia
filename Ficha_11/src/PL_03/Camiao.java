@@ -11,10 +11,10 @@ public class Camiao extends Veiculo{
 
     public void viagem(int km, int carga){
         if(carga > this.capacidaDeCarga){
-            System.out.println("Viagem recusada por excesso de peso!");
+            System.out.println("Viagem com os parâmetros KM:" + km + " carga:" + carga +  " recusada por excesso de peso!");
         }else{
             double consumoViagem = consumo(km) + (carga/100)*0.2;
-            System.out.println("Esta viagem vai ter um consumo de " + consumoViagem + "lt.");
+            System.out.println("Esta viagem, com os parâmetros KM:" + km + " carga:" + carga + " vai ter um consumo de " + consumoViagem + "lt.");
         }
     }
 }

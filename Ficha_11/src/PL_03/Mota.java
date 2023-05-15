@@ -11,7 +11,7 @@ public class Mota extends Veiculo {
     }
 
     public void imagem() {
-        String file = "Mota.txt";
+        String file = "src/PL_03/Mota.txt";
         try {
             Scanner readFile = new Scanner(new File(file));
             while (readFile.hasNext()) {
