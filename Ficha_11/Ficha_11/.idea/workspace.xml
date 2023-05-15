@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="3938e620-0ad2-41ef-841a-8581c5c7a5d7" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ficha_11.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../poo_fp11/BikeStore/Bicycle.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../poo_fp11/BikeStore/BicycleManagement.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../poo_fp11/BikeStore/BikeDemo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../poo_fp11/BikeStore/BikeTools.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../poo_fp11/BikeStore/DeliveryBike.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../poo_fp11/BikeStore/MountainBike.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../poo_fp11/BikeStore/MountainBikeSuspension.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../poo_fp11/BikeStore/Sponsors.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../poo_fp11/poo_fp11_02/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../poo_fp11_02/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../poo_fp11_02/.idea/dictionaries/sdev0223.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../poo_fp11_02/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../poo_fp11_02/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../poo_fp11_02/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../poo_fp11_02/out/production/poo_fp11_02/Animal.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../poo_fp11_02/out/production/poo_fp11_02/Cao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../poo_fp11_02/out/production/poo_fp11_02/Farm.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../poo_fp11_02/out/production/poo_fp11_02/Galinha.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../poo_fp11_02/out/production/poo_fp11_02/Gato.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../poo_fp11_02/out/production/poo_fp11_02/Pato.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../poo_fp11_02/out/production/poo_fp11_02/Porco.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../poo_fp11_02/out/production/poo_fp11_02/Vaca.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../poo_fp11_02/out/production/poo_fp11_02/poo_fp11_02.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../poo_fp11_02/poo_fp11_02.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../poo_fp11_02/src/Animal.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../poo_fp11_02/src/Cao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../poo_fp11_02/src/Farm.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../poo_fp11_02/src/Galinha.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../poo_fp11_02/src/Gato.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../poo_fp11_02/src/Pato.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../poo_fp11_02/src/Porco.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../poo_fp11_02/src/Vaca.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../poo_fp11_02/src/poo_fp11_02.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../poo_pf11_03/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../poo_pf11_03/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../poo_pf11_03/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../poo_pf11_03/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../poo_pf11_03/poo_pf11_03.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../poo_pf11_03/src/Main.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectId" id="2PpebN3tY5l6TusalNroNk6WKtc" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/sdev0223/Documents/GitHub/algoritmia/Ficha_11",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3938e620-0ad2-41ef-841a-8581c5c7a5d7" name="Changes" comment="" />
+      <created>1684158521866</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1684158521866</updated>
+      <workItem from="1684158523291" duration="45000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
