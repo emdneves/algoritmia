@@ -1,4 +1,4 @@
-package poo_fp11.BikeStore;
+package PL_11_01;
 
 public enum BikeTools {
     BIDON_AGUA,

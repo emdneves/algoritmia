@@ -1,4 +1,4 @@
-package poo_fp11.BikeStore;
+package PL_11_01;
 
 import poo_fp11.BikeStore.Bicycle;
 import poo_fp11.BikeStore.BicycleManagement;
