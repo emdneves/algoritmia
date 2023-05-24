@@ -1,11 +1,9 @@
 package Entidades;
 
-abstract class Entidade {
-
-    private String nome;
-    private int vida, forca;
-    private String mainColor;
-    private boolean adjustableSeatpost;
+public abstract class Entidade {
+    protected String nome;
+    protected int vida;
+    protected int forca;
 
     public Entidade(String nome, int vida, int forca) {
         this.nome = nome;
@@ -13,5 +11,5 @@ abstract class Entidade {
         this.forca = forca;
     }
 
-    abstract void mostrarDetalhes();
+    public abstract void mostrarDetalhes();
 }

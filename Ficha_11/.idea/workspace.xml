@@ -1,11 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="3938e620-0ad2-41ef-841a-8581c5c7a5d7" name="Changes" comment="" />
+    <list default="true" id="3938e620-0ad2-41ef-841a-8581c5c7a5d7" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TP-RPG/src/Entidades/Arqueiro.java" beforeDir="false" afterPath="$PROJECT_DIR$/TP-RPG/src/Entidades/Arqueiro.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TP-RPG/src/Entidades/Cavaleiro.java" beforeDir="false" afterPath="$PROJECT_DIR$/TP-RPG/src/Entidades/Cavaleiro.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TP-RPG/src/Entidades/Entidade.java" beforeDir="false" afterPath="$PROJECT_DIR$/TP-RPG/src/Entidades/Entidade.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TP-RPG/src/Entidades/Feiticeiro.java" beforeDir="false" afterPath="$PROJECT_DIR$/TP-RPG/src/Entidades/Feiticeiro.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TP-RPG/src/Entidades/Heroi.java" beforeDir="false" afterPath="$PROJECT_DIR$/TP-RPG/src/Entidades/Heroi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TP-RPG/src/Entidades/Npc.java" beforeDir="false" afterPath="$PROJECT_DIR$/TP-RPG/src/Entidades/Npc.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TP-RPG/src/Entidades/Vendedor.java" beforeDir="false" afterPath="$PROJECT_DIR$/TP-RPG/src/Entidades/Vendedor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TP-RPG/src/Itens/Arma.java" beforeDir="false" afterPath="$PROJECT_DIR$/TP-RPG/src/Itens/Arma.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TP-RPG/src/Itens/ItemHeroi.java" beforeDir="false" afterPath="$PROJECT_DIR$/TP-RPG/src/Itens/ItemHeroi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TP-RPG/src/Itens/PocaoHp.java" beforeDir="false" afterPath="$PROJECT_DIR$/TP-RPG/src/Itens/PocaoHp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TP-RPG/src/Jogo/Jogo.java" beforeDir="false" afterPath="$PROJECT_DIR$/TP-RPG/src/Jogo/Jogo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TP-RPG/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PL_03/Combustivel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PL_03/Combustivel.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="ProjectId" id="2PpebN3tY5l6TusalNroNk6WKtc" />
   <component name="ProjectViewState">
@@ -16,7 +45,8 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false"
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/ima7/Documents/GitHub/algoritmia/Ficha_11/TP-RPG"
   }
 }]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
