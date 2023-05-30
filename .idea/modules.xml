@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Ficha_01/Ficha_01.iml" filepath="$PROJECT_DIR$/Ficha_01/Ficha_01.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Ficha_02/Ficha_02.iml" filepath="$PROJECT_DIR$/Ficha_02/Ficha_02.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Ficha_03/Ficha_03.iml" filepath="$PROJECT_DIR$/Ficha_03/Ficha_03.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Ficha_04/Ficha_04.iml" filepath="$PROJECT_DIR$/Ficha_04/Ficha_04.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Ficha_05/Ficha_05.iml" filepath="$PROJECT_DIR$/Ficha_05/Ficha_05.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Ficha_06/Ficha_06.iml" filepath="$PROJECT_DIR$/Ficha_06/Ficha_06.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Ficha_07/Ficha_07.iml" filepath="$PROJECT_DIR$/Ficha_07/Ficha_07.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Ficha_08/Ficha_08.iml" filepath="$PROJECT_DIR$/Ficha_08/Ficha_08.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Ficha_11/Ficha_11.iml" filepath="$PROJECT_DIR$/Ficha_11/Ficha_11.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JogoGalo/JogoGalo.iml" filepath="$PROJECT_DIR$/JogoGalo/JogoGalo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Ficha_11/TP-RPG/TP-RPG.iml" filepath="$PROJECT_DIR$/Ficha_11/TP-RPG/TP-RPG.iml" />
+      <module fileurl="file://$PROJECT_DIR$/algoritmia.iml" filepath="$PROJECT_DIR$/algoritmia.iml" />
+      <module fileurl="file://$PROJECT_DIR$/rpg/rpg.iml" filepath="$PROJECT_DIR$/rpg/rpg.iml" />
+    </modules>
+  </component>
+</project>
