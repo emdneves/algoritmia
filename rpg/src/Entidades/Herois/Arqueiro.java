@@ -1,4 +1,4 @@
-package Entidades.Heróis;
+package Entidades.Herois;
 
 import Entidades.Entidade;
 import Entidades.Heroi;

@@ -1,9 +1,9 @@
 package Jogo;
 
 import Entidades.*;
-import Entidades.Heróis.Arqueiro;
-import Entidades.Heróis.Cavaleiro;
-import Entidades.Heróis.Feiticeiro;
+import Entidades.Herois.Arqueiro;
+import Entidades.Herois.Cavaleiro;
+import Entidades.Herois.Feiticeiro;
 import Itens.Arma;
 import Itens.PocaoHP;
 import Itens.TiposHeroi;
