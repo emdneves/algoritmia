@@ -5,13 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4b77e21b-65c3-4caa-8740-3a10c26977e8" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/factory3/Document.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/factory3/DocumentFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/factory3/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/factory3/TiposDeDocumento/CalcSheet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/factory3/TiposDeDocumento/PlainText.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/factory3/TiposDeDocumento/Present.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/factory2/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/factory2/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/factory2/Taco.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/factory2/Taco.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/factory2/TacoFacrory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/factory2/TacoFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/factory2/TiposDeTaco/frango.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/factory2/TiposDeTaco/Frango.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/factory2/TiposDeTaco/vaca.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/factory2/TiposDeTaco/Vaca.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/factory2/TiposDeTaco/vegetariano.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/factory2/TiposDeTaco/Vegetariano.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/design patterns_/factory2/TacoFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/design patterns_/factory2/TacoFactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/factory2/TacoFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/factory2/TacoFactory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../design patterns_/design patterns_.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../design patterns_/src/singleton1/DatabaseConnection.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../design patterns_/src/singleton1/Main.java" beforeDir="false" />
@@ -92,7 +94,7 @@
       <option name="presentableId" value="Default" />
       <updated>1685539429800</updated>
       <workItem from="1685539430895" duration="346000" />
-      <workItem from="1685539825573" duration="4649000" />
+      <workItem from="1685539825573" duration="6864000" />
     </task>
     <servers />
   </component>

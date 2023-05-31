@@ -2,6 +2,7 @@ package factory2;
 
 import factory2.TiposDeTaco.*;
 
+import factory2.TiposDeTaco.*;
 public class TacoFactory {
     public static Taco createTaco(String type) {
         switch (type) {
