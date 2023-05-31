@@ -5,29 +5,29 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4b77e21b-65c3-4caa-8740-3a10c26977e8" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/design patterns.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/factory1/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/factory1/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/factory1/ProductFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/factory1/Products/Book.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/factory1/Products/Clothing.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/factory1/Products/Electronics.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/factory2/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/factory2/Taco.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/factory2/TacoFacrory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/factory2/TiposDeTaco/frango.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/factory2/TiposDeTaco/vaca.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/factory2/TiposDeTaco/vegetariano.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PL_01/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PL_01/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PL_01/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PL_01/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PL_01/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PL_01/PL_01.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PL_01/out/production/PL_01/singleton1/DatabaseConnection.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PL_01/out/production/PL_01/singleton1/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PL_01/out/production/PL_01/singleton2/Logger.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PL_01/out/production/PL_01/singleton2/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PL_01/out/production/PL_01/singleton3/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PL_01/out/production/PL_01/singleton3/UserSessionManager.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PL_01/src/singleton1/DatabaseConnection.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PL_01/src/singleton1/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PL_01/src/singleton2/Logger.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PL_01/src/singleton2/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PL_01/src/singleton3/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PL_01/src/singleton3/UserSessionManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/singleton2/Logger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/singleton2/Logger.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/singleton3/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/singleton3/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/singleton3/UserSessionManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/singleton3/UserSessionManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../design patterns_/design patterns_.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../design patterns_/src/singleton1/DatabaseConnection.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../design patterns_/src/singleton1/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../design patterns_/src/singleton2/Logger.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../design patterns_/src/singleton2/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../design patterns_/src/singleton3/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../design patterns_/src/singleton3/UserSessionManager.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,6 +48,9 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2QYnYK5AK5zs6g5tx7XBTv50rTh" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -57,16 +60,19 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/sdev0223/Documents/GitHub/algoritmia/design patterns",
+    "last_opened_file_path": "C:/Users/sdev0223/Documents/GitHub/algoritmia/design patterns/src/factory1",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\sdev0223\Documents\GitHub\algoritmia\design patterns\src\factory1" />
       <recent name="C:\Users\sdev0223\Documents\GitHub\algoritmia\design patterns_\src\singleton3" />
       <recent name="C:\Users\sdev0223\Documents\GitHub\algoritmia\design patterns_\src\singleton2" />
     </key>
@@ -95,7 +101,7 @@
       <option name="presentableId" value="Default" />
       <updated>1685539429800</updated>
       <workItem from="1685539430895" duration="346000" />
-      <workItem from="1685539825573" duration="340000" />
+      <workItem from="1685539825573" duration="3289000" />
     </task>
     <servers />
   </component>

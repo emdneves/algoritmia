@@ -13,7 +13,7 @@ package singleton3;
 import java.util.Random;
 
 public class UserSessionManager {
-    private static UserSessionManager instance;
+    private static UserSessionManager variavelEstaticaClasse;
     private String sessionToken;
     private long lastAccessTime;
 
@@ -22,10 +22,10 @@ public class UserSessionManager {
     }
 
     public static UserSessionManager getInstance() {
-        if (instance == null) {
-            instance = new UserSessionManager();
+        if (variavelEstaticaClasse == null) {
+            variavelEstaticaClasse = new UserSessionManager();
         }
-        return instance;
+        return variavelEstaticaClasse;
     }
 
     public String getSessionToken() {
