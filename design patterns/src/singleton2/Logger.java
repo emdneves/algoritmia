@@ -18,8 +18,6 @@ public class Logger {
 // Código para conectar à base de dados usando a connectionString
         System.out.println("log message: " + log);
     }
-
-// Outros métodos da classe
 }
 
 
