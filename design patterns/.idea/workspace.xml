@@ -5,15 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4b77e21b-65c3-4caa-8740-3a10c26977e8" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/factory3/Document.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/factory3/DocumentFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/factory3/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/factory3/TiposDeDocumento/CalcSheet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/factory3/TiposDeDocumento/PlainText.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/factory3/TiposDeDocumento/Present.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/design patterns_/factory2/TacoFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/design patterns_/factory2/TacoFactory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/factory2/TacoFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/factory2/TacoFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/factory3/Document.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/factory3/Document.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/factory3/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/factory3/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/factory3/TiposDeDocumento/CalcSheet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/factory3/TiposDeDocumento/CalcSheet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../design patterns_/design patterns_.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../design patterns_/src/singleton1/DatabaseConnection.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../design patterns_/src/singleton1/Main.java" beforeDir="false" />
@@ -48,21 +43,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/sdev0223/Documents/GitHub/algoritmia/design patterns/src/factory1",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.lookFeel",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/sdev0223/Documents/GitHub/algoritmia/design patterns&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\sdev0223\Documents\GitHub\algoritmia\design patterns\src\factory1" />
@@ -94,7 +89,9 @@
       <option name="presentableId" value="Default" />
       <updated>1685539429800</updated>
       <workItem from="1685539430895" duration="346000" />
-      <workItem from="1685539825573" duration="6864000" />
+      <workItem from="1685539825573" duration="7440000" />
+      <workItem from="1685625636723" duration="2190000" />
+      <workItem from="1685629069488" duration="1124000" />
     </task>
     <servers />
   </component>

@@ -20,3 +20,6 @@ public class CalcSheet extends Document {
         System.out.println("A fechar o documento de" + [tipo de documento]);
     }
 }
+
+
+
