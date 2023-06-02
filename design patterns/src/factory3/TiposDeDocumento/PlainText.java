@@ -3,8 +3,8 @@ package factory3.TiposDeDocumento;
 import factory3.Document;
 
 public class PlainText extends Document {
-    public PlainText(String nome, String autor) {
-        super(nome, autor);
+    public PlainText(String extensao, String nome, String autor) {
+        super(extensao, nome, autor);
     }
 
     @Override
@@ -19,6 +19,6 @@ public class PlainText extends Document {
 
     @Override
     public void close() {
-        System.out.println("A fechar o documento de texto: " + nome);
+        System.out.println("A fechar o documento de texto: " + nome + extensao);
     }
 }

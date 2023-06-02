@@ -3,8 +3,8 @@ package factory3.TiposDeDocumento;
 import factory3.Document;
 
 public class Presentation extends Document {
-    public Presentation(String nome, String autor) {
-        super(nome, autor);
+    public Presentation(String extensao, String nome, String autor) {
+        super(extensao, nome, autor);
     }
 
     @Override
@@ -19,7 +19,6 @@ public class Presentation extends Document {
 
     @Override
     public void close() {
-        System.out.println("A fechar a apresentação: " + nome);
+        System.out.println("A fechar a apresentação: " + nome + extensao);
     }
 }
-

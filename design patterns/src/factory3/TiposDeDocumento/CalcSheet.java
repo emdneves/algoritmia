@@ -3,8 +3,8 @@ package factory3.TiposDeDocumento;
 import factory3.Document;
 
 public class CalcSheet extends Document {
-    public CalcSheet(String nome, String autor) {
-        super(nome, autor);
+    public CalcSheet(String extensao, String nome, String autor) {
+        super(extensao, nome, autor);
     }
 
     @Override
@@ -19,6 +19,6 @@ public class CalcSheet extends Document {
 
     @Override
     public void close() {
-        System.out.println("A fechar o documento de planilha: " + nome);
+        System.out.println("A fechar o documento de planilha: " + nome + extensao);
     }
 }
