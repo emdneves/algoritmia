@@ -5,7 +5,40 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4b77e21b-65c3-4caa-8740-3a10c26977e8" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../FA_05/FA_05.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PL_11/PL_11.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PL_12/PL_12.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PL_13/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PL_13/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PL_13/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PL_13/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PL_13/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PL_13/PL_13.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PL_13/src/PL_13_01/Agilidade.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PL_13/src/PL_13_01/Animal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PL_13/src/PL_13_01/Aquatico.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PL_13/src/PL_13_01/Baleia.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PL_13/src/PL_13_01/Cao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PL_13/src/PL_13_01/Caracol.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PL_13/src/PL_13_01/Gato.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PL_13/src/PL_13_01/Peixe.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PL_13/src/PL_13_01/Terrestre.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PL_13/src/PL_13_01/Zoo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PL_13/src/PL_13_02/Carro.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PL_13/src/PL_13_02/Mota.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PL_13/src/PL_13_02/Transporte.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PL_13/src/PL_13_02/Veiculo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PL_13/src/PL_13_02/Viagem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PL_13/src/PL_13_03/ContaBancaria.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PL_13/src/PL_13_03/ContaCorrente.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PL_13/src/PL_13_03/ContaPoupanca.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PL_13/src/PL_13_03/Transferencia.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PL_13/src/PL_13_03/Transferivel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../algoritmia.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../31 - Ficha Prática 11 - Programação Orientada a Objetos.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../33 - Ficha Prática 13 - Programação Orientada a Objetos.pdf" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Design Patterns.pdf" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,7 +73,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/Users/ima7/Documents/GitHub/algoritmia/design patterns",
+    "last_opened_file_path": "C:/Users/ima7/Documents/GitHub/algoritmia/design patterns/src",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -52,6 +85,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\ima7\Documents\GitHub\algoritmia\design patterns\src" />
       <recent name="C:\Users\sdev0223\Documents\GitHub\algoritmia\design patterns\src\factory1" />
       <recent name="C:\Users\sdev0223\Documents\GitHub\algoritmia\design patterns_\src\singleton3" />
       <recent name="C:\Users\sdev0223\Documents\GitHub\algoritmia\design patterns_\src\singleton2" />
@@ -86,7 +120,8 @@
       <workItem from="1685629069488" duration="1124000" />
       <workItem from="1685638272761" duration="84000" />
       <workItem from="1685638365507" duration="207000" />
-      <workItem from="1685692303840" duration="3848000" />
+      <workItem from="1685692303840" duration="3974000" />
+      <workItem from="1685709054868" duration="654000" />
     </task>
     <servers />
   </component>
