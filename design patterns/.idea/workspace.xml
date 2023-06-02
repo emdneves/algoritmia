@@ -6,20 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="4b77e21b-65c3-4caa-8740-3a10c26977e8" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/design patterns_/factory3/Document.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/design patterns_/factory3/Document.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/design patterns_/factory3/TiposDeDocumento/Present.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/factory3/Document.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/factory3/Document.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/factory3/DocumentFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/factory3/DocumentFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/factory3/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/factory3/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/factory3/TiposDeDocumento/CalcSheet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/factory3/TiposDeDocumento/CalcSheet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/factory3/TiposDeDocumento/PlainText.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/factory3/TiposDeDocumento/PlainText.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/factory3/TiposDeDocumento/Presentation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/factory3/TiposDeDocumento/Presentation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/production/design patterns/factory3/Document.class" beforeDir="false" afterPath="$PROJECT_DIR$/../out/production/design patterns/factory3/Document.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/production/design patterns/factory3/DocumentFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/../out/production/design patterns/factory3/DocumentFactory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/production/design patterns/factory3/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../out/production/design patterns/factory3/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/production/design patterns/factory3/TiposDeDocumento/CalcSheet.class" beforeDir="false" afterPath="$PROJECT_DIR$/../out/production/design patterns/factory3/TiposDeDocumento/CalcSheet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/production/design patterns/factory3/TiposDeDocumento/PlainText.class" beforeDir="false" afterPath="$PROJECT_DIR$/../out/production/design patterns/factory3/TiposDeDocumento/PlainText.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/production/design patterns/factory3/TiposDeDocumento/Presentation.class" beforeDir="false" afterPath="$PROJECT_DIR$/../out/production/design patterns/factory3/TiposDeDocumento/Presentation.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,22 +33,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/ima7/Documents/GitHub/algoritmia/design patterns&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.ide.settings.spelling&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "C:/Users/ima7/Documents/GitHub/algoritmia/design patterns",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "reference.settings.ide.settings.spelling",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\sdev0223\Documents\GitHub\algoritmia\design patterns\src\factory1" />
@@ -99,12 +86,15 @@
       <workItem from="1685629069488" duration="1124000" />
       <workItem from="1685638272761" duration="84000" />
       <workItem from="1685638365507" duration="207000" />
-      <workItem from="1685692303840" duration="853000" />
+      <workItem from="1685692303840" duration="3848000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
